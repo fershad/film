@@ -634,7 +634,7 @@ h1 {
   line-height: var(--font-lineheight-3);
 }
 
-#gallery > picture {
+#gallery picture {
   display: block;
   margin: 0;
   padding: 0;
@@ -642,7 +642,7 @@ h1 {
   width: 100%;
 }
 
-#gallery > picture > img {
+#gallery picture > img {
   display: block;
   object-fit: cover;
   aspect-ratio: 1 / 1;
@@ -681,4 +681,12 @@ h1 {
     background-color: var(--stone-10);
     color: var(--sand-0);
   }
+}
+
+header h1 {
+  display: block;
+  width: fit-content;
+  padding-inline: var(--size-3);
+  margin-inline-start: calc(var(--size-2) * -1);
+  background-color: var(--sand-2);
 }

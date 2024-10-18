@@ -7,9 +7,7 @@
     {% minifiedcss %}
   </head>
   <body>
-    <header>
-        <h1>{{ title |  default: site.title }}</h1>
-    </header>
+    {% include 'partials/header.liquid' %}
     <main>{{ content }}</main>
   </body>
 </html>
