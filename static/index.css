@@ -603,6 +603,14 @@
   --size-relative-15: 30ch;
 }
 
+@font-face {
+  font-family: "Departure Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/DepartureMono-Regular.woff2") format("woff2"),
+    url("/fonts/DepartureMono-Regular.woff") format("woff");
+}
+
 html {
   font-size: var(--font-size-fluid-1);
   font-family: "Departure Mono", var(--font-mono);
