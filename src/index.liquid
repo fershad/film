@@ -4,6 +4,6 @@ title: "Film by Fershad"
 ---
 <section id="gallery">
     {% for image in images %}
-        <img src="../static/images/{{ image }}" alt="">
+        <img src="../static/images/{{ image.file }}" alt="">
     {% endfor %}
 </section>
