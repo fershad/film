@@ -13,11 +13,11 @@ permalink: "image/{{ image.file | slugify }}/"
 <nav role="image-navigation" class="image-nav">
   <ol>
     <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><span>
-      <img src="../static/images/{{ pagination.page.previous.file }}" alt="Previous image">
+      <img src="../static/images/{{ pagination.page.previous.file }}" alt="Previous image" height="110" width="190" eleventy:widths="400">
       <p>Previous</p>
     </span></a>{% endif %}</li>
     <li><span>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">
-      <img src="../static/images/{{ pagination.page.next.file }}" alt="Next image">
+      <img src="../static/images/{{ pagination.page.next.file }}" alt="Next image"  height="110" width="190" eleventy:widths="400">
       <p>Next</p>
     </a></span>{% endif %}</li>
   </ol>
