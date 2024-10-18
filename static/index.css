@@ -613,6 +613,14 @@ body {
   color: var(--stone-10);
 }
 
+main,
+header {
+  display: block;
+  margin: 0 auto;
+  max-width: var(--size-xl);
+  padding: var(--size-3);
+}
+
 h1 {
   font-size: var(--font-size-fluid-3);
   line-height: var(--font-lineheight-3);
@@ -645,4 +653,24 @@ h1 {
   max-width: var(--size-xl);
   margin: 0 auto;
   padding: var(--size-3);
+}
+
+#main-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: var(--size-3);
+}
+
+#main-image > picture,
+#main-image > picture > img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--stone-10);
+    color: var(--sand-0);
+  }
 }
