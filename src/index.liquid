@@ -1,0 +1,9 @@
+---
+layout: base.liquid
+title: "Film by Fershad"
+---
+<section id="gallery">
+    {% for image in images %}
+        <img src="../static/images/{{ image }}" alt="">
+    {% endfor %}
+</section>
