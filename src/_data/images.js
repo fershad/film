@@ -1,5 +1,7 @@
 const directory = "static/images";
 import fs from "fs/promises";
+import path from "node:path";
+const __dirname = import.meta.dirname;
 
 /**
  * @constant {string} sort
@@ -50,6 +52,7 @@ const readFiles = async () => {
  * @returns {Promise<Array<{file: string, meta: {path: string, birthtime: Date}}>>} A promise that resolves to an array of sorted image objects with metadata.
  */
 const getImages = async () => {
+    const discoveredImages = await fs.readFile(path.resolve(__dirname, "../../.cache/discovered-images.json"), "utf-8");
     let images = await readFiles();
 
     if (sort === "asc") {
@@ -61,6 +64,18 @@ const getImages = async () => {
             return b.meta.birthtime - a.meta.birthtime;
         });
     }
+    
+    // console.log(JSON.parse(discoveredImages));
+    // Write the data to a JSON file called ../../.cache/discovered-images.json
+    // Create the .cache directory if it doesn't exist
+    const data = JSON.stringify(images, null, 4);
+    try {
+        await fs.mkdir(path.resolve(__dirname, "../../.cache"), { recursive: true });
+        await fs.writeFile(path.resolve(__dirname, "../../.cache/discovered-images.json"), data);
+    } catch (err) {
+        console.error(err);
+    }
+
 
     return images;
 };
