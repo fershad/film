@@ -52,7 +52,8 @@ const readFiles = async () => {
  * @returns {Promise<Array<{file: string, meta: {path: string, birthtime: Date}}>>} A promise that resolves to an array of sorted image objects with metadata.
  */
 const getImages = async () => {
-    const discoveredImages = await fs.readFile(path.resolve(__dirname, "../../.cache/discovered-images.json"), "utf-8");
+    const discoveredImagesFile = await fs.readFile(path.resolve(__dirname, "../../.cache/discovered-images.json"), "utf-8");
+    const discoveredImages = JSON.parse(discoveredImagesFile);
     let images = await readFiles();
 
     if (sort === "asc") {
@@ -64,17 +65,32 @@ const getImages = async () => {
             return b.meta.birthtime - a.meta.birthtime;
         });
     }
+
+    let newImagesBoolean = false;
+    // Check if any new images have been added and console log a message
+    images.forEach((image) => {
+        const found = discoveredImages.find((discoveredImage) => discoveredImage.file === image.file);
+        if (!found) {
+            newImagesBoolean = true;
+            console.log(`New image discovered: ${image.file}`);
+        }
+    });
     
     // console.log(JSON.parse(discoveredImages));
     // Write the data to a JSON file called ../../.cache/discovered-images.json
     // Create the .cache directory if it doesn't exist
-    const data = JSON.stringify(images, null, 4);
+
+    if (!newImagesBoolean) {
+        console.log("No new images discovered.");
+    } else {
+        console.log("New images discovered. Writing to cache.");
     try {
         await fs.mkdir(path.resolve(__dirname, "../../.cache"), { recursive: true });
-        await fs.writeFile(path.resolve(__dirname, "../../.cache/discovered-images.json"), data);
+        await fs.writeFile(path.resolve(__dirname, "../../.cache/discovered-images.json"), JSON.stringify(images, null, 2));
     } catch (err) {
         console.error(err);
     }
+}
 
 
     return images;
