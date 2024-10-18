@@ -1,4 +1,13 @@
 <header>
-        <h1>{{ title |  default: site.title }}</h1>
-        <small>{{ tagline | default: site.tagline }}</small>
+        <span>
+            <h1>{{ title |  default: site.title }}</h1>
+            <small>{{ tagline | default: site.tagline }}</small>
+        </span>
+        {% if pageType == 'image' %}
+            <nav>
+                <ul>
+                    <li><a href="/">&larr; Back to gallery</a></li>
+                </ul>
+            </nav>
+        {% endif %}
     </header>

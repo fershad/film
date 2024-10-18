@@ -1,14 +1,24 @@
 ---
 layout: base.liquid
+pageType: image
 pagination:
   data: images
   size: 1
   alias: image
 permalink: "image/{{ image.file | slugify }}/"
 ---
-<aside>
-  <a href="/">&larr; Back to gallery</a>
-</aside>
 <section id="main-image">
   <img src="../static/images/{{ image.file }}" alt="">
 </section>
+<nav role="image-navigation" class="image-nav">
+  <ol>
+    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><span>
+      <img src="../static/images/{{ pagination.page.previous.file }}" alt="Previous image">
+      <p>Previous</p>
+    </span></a>{% endif %}</li>
+    <li><span>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">
+      <img src="../static/images/{{ pagination.page.next.file }}" alt="Next image">
+      <p>Next</p>
+    </a></span>{% endif %}</li>
+  </ol>
+</nav>
