@@ -75,10 +75,6 @@ const getImages = async () => {
             console.log(`New image discovered: ${image.file}`);
         }
     });
-    
-    // console.log(JSON.parse(discoveredImages));
-    // Write the data to a JSON file called ../../.cache/discovered-images.json
-    // Create the .cache directory if it doesn't exist
 
     if (!newImagesBoolean) {
         console.log("No new images discovered.");
