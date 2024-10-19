@@ -21,12 +21,12 @@ export const config = {
     year: {
       name: "year",
       type: "number",
-      message: "Enter the image date (YYYY):",
+      message: "Enter the image year (YYYY e.g 2024):",
     },
     month: {
       name: "month",
       type: "number",
-      message: "Enter the image date (MM):",
+      message: "Enter the image month (MM e.g 08):",
     },
     collection: {
       name: "collection",
