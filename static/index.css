@@ -972,8 +972,8 @@
   font-family: "Departure Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/DepartureMono-Regular.woff2") format("woff2"),
-    url("/fonts/DepartureMono-Regular.woff") format("woff");
+  src: url("/static/fonts/DepartureMono-Regular.woff2") format("woff2"),
+    url("/static/fonts/DepartureMono-Regular.woff") format("woff");
 }
 
 html {
@@ -1039,6 +1039,7 @@ h1 {
 #main-image > picture > img {
   display: block;
   max-width: 100%;
+  margin-block: var(--size-3);
 }
 
 header h1 {
@@ -1073,6 +1074,12 @@ nav.image-nav ol {
   margin-block: var(--size-3);
 }
 
+nav.image-nav ol li {
+  display: block;
+  position: relative;
+  padding: 0;
+}
+
 nav.image-nav ol li span img {
   filter: grayscale(1);
   transition: filter 0.25s var(--ease-3);
@@ -1084,7 +1091,7 @@ nav.image-nav ol li span:hover img {
 
 nav.image-nav img {
   display: block;
-  min-width: 20vw;
+  /* min-width: 20vw; */
   max-width: 30vw;
   height: auto;
   aspect-ratio: 16 / 9;
@@ -1142,6 +1149,15 @@ details > summary + pre {
   text-wrap-mode: wrap;
 }
 
+div > time {
+  font-size: max(0.5em, var(--font-size-0));
+  max-inline-size: var(--size-content-1);
+}
+
+aside {
+  text-align: left;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--stone-10);
@@ -1151,5 +1167,41 @@ details > summary + pre {
   header h1 {
     color: var(--stone-10);
     background-color: var(--sand-0);
+  }
+}
+
+/* Set for screen sizes > 768px */
+@media screen and (min-width: 767px) {
+  .image-holder[data-orientation="portrait"] {
+    display: grid;
+    gap: var(--size-3);
+    grid-template-areas: "image nav";
+    grid-template-columns: 1fr 20vw;
+  }
+
+  .image-holder #main-image {
+    grid-area: image;
+    /* max-height: 100vh; */
+  }
+
+  .image-holder nav {
+    grid-area: nav;
+  }
+
+  .image-holder[data-orientation="portrait"] nav ol {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  .image-holder[data-orientation="portrait"] img {
+    width: auto;
+    max-height: 150vh;
+    /* margin: 0 0 0 auto; */
+  }
+
+  nav.image-nav img {
+    max-width: 20vw;
   }
 }
