@@ -2,6 +2,7 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import fs from "node:fs/promises";
 import path from "node:path";
 import CleanCSS from "clean-css";
+import pluginRss from "@11ty/eleventy-plugin-rss";
 
 const __dirname = import.meta.dirname;
 
@@ -44,4 +45,7 @@ export default async function(eleventyConfig) {
 		const json = JSON.stringify(value, null, 2);
 		return json;
 	});
+
+	eleventyConfig.addPlugin(pluginRss);
+
 };

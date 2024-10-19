@@ -1,11 +1,18 @@
 ---
 layout: base.liquid
 pageType: image
+tags: images
 pagination:
   data: images
   size: 1
   alias: image
+  addAllPagesToCollections: true
 permalink: "image/{{ image.file | slugify }}/"
+eleventyComputed:
+  title: "{{ image.metadata.title  }}"
+  description: "{{image.metadata.story}}"
+  path: "{{image.meta.path}}"
+  alt: "{{image.metadata.altText}}"
 ---
 <aside>
   <details>

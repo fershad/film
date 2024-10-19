@@ -1,0 +1,43 @@
+---json
+{
+  "permalink": "feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "Film by Fershad",
+    "description": "Photos captured on film camera by Fershad Irani.",
+    "language": "en",
+    "base": "https://film.fershad.com/",
+    "author": {
+      "name": "Fershad Irani"
+    }
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ metadata.language or page.lang }}">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.description }}</subtitle>
+  <link href="{{ permalink | htmlBaseUrl(metadata.base) }}" rel="self" />
+  <link href="{{ metadata.base | addPathPrefixToFullUrl }}" />
+  <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.base | addPathPrefixToFullUrl }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+  </author>
+  {%- for image in collections.images | reverse %}
+  {%- set absolutePostUrl %}{{ image.url | htmlBaseUrl(metadata.base) }}{% endset %}
+  <entry>
+    <title>{{ image.data.title }}</title>
+    <link href="{{ absolutePostUrl }}" />
+    <updated>{{ image.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">
+        <![CDATA[
+            <img src="{{ metadata.base }}/{{ image.data.path }}" alt="{{ image.data.altText }}" />
+            <h2>{{ image.data.title }}</h2>
+            <p>{{ image.data.description }}</p>
+        ]]>
+    </content>
+  </entry>
+  {%- endfor %}
+</feed>
