@@ -1022,7 +1022,7 @@ h1 {
   grid-gap: var(--gap);
   /* min() with 100% prevents overflow
     in extra narrow spaces */
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 40vw));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20vw), var(--min)));
   max-width: var(--size-xl);
   margin: 0 auto;
   padding: var(--size-3);
@@ -1039,13 +1039,6 @@ h1 {
 #main-image > picture > img {
   display: block;
   max-width: 100%;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--stone-10);
-    color: var(--sand-0);
-  }
 }
 
 header h1 {
@@ -1144,4 +1137,16 @@ details > summary + pre {
   color: var(--stone-10);
   font-family: "Departure Mono", var(--font-mono);
   font-size: var(--font-size-fluid-0);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--stone-10);
+    color: var(--sand-0);
+  }
+
+  header h1 {
+    color: var(--stone-10);
+    background-color: var(--sand-0);
+  }
 }
