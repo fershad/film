@@ -1,6 +1,5 @@
 import { config } from "./image.config.js";
 import fs from "fs/promises";
-import { get } from "http";
 import path from "node:path";
 const directory = "static/images";
 const __dirname = import.meta.dirname;
@@ -49,8 +48,8 @@ const readFiles = async () => {
  * @returns {Promise<Array<{file: string, meta: {path: string, birthtime: Date}}>>} A promise that resolves to an array of sorted image objects with metadata.
  */
 const getImages = async () => {
-    const discoveredImagesFile = await fs.readFile(path.resolve(__dirname, "../../.cache/discovered-images.json"), "utf-8");
-    const discoveredImages = JSON.parse(discoveredImagesFile);
+    const discoveredImagesFile = await fs.readFile(path.resolve(__dirname, "../../_cache/discovered-images.json"), "utf-8").catch(() => null);
+    const discoveredImages = JSON.parse(discoveredImagesFile) || [];
     let images = await readFiles();
 
     if (sort === "asc") {
@@ -78,8 +77,8 @@ const getImages = async () => {
     } else {
         console.log("New images discovered. Writing to cache.");
     try {
-        await fs.mkdir(path.resolve(__dirname, "../../.cache"), { recursive: true });
-        await fs.writeFile(path.resolve(__dirname, "../../.cache/discovered-images.json"), JSON.stringify(images, null, 2));
+        await fs.mkdir(path.resolve(__dirname, "../../_cache"), { recursive: true });
+        await fs.writeFile(path.resolve(__dirname, "../../_cache/discovered-images.json"), JSON.stringify(images, null, 2));
     } catch (err) {
         console.error(err);
     }
