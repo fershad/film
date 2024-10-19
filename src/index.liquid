@@ -3,6 +3,6 @@ layout: base.liquid
 ---
 <section id="gallery">
     {% for image in images %}
-        <a href="/image/{{ image.file | slugify }}"><img src="../static/images/{{ image.file }}" alt="" sizes="40vw" height="400" width="400"></a>
+        <a href="/image/{{ image.file | slugify }}"><img src="../static/images/{{ image.file }}" alt="{{ image.metadata.altText }}" sizes="40vw" height="400" width="400"></a>
     {% endfor %}
 </section>

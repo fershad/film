@@ -21,7 +21,7 @@ eleventyComputed:
   </details>
 </aside>
 <section id="main-image">
-  <img src="../static/images/{{ image.file }}" alt="" eleventy:widths="800,1600,2200" sizes="100vw" loading="eager" decoding="async" >
+  <img src="../static/images/{{ image.file }}" alt="{{ image.metadata.altText }}" eleventy:widths="800,1600,2200" sizes="100vw" loading="eager" decoding="async" >
 </section>
 <nav role="image-navigation" class="image-nav">
   <ol>
