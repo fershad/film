@@ -3,6 +3,11 @@ export const config = {
   sort: "asc", // "asc" or "desc"
   // Image metadata
   metadata: {
+    portrait: {
+      name: "portrait",
+      type: "confirm",
+      message: "Is the image in portrait orientation?",
+    },
     title: {
       name: "title",
       type: "input",
