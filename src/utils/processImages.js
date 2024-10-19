@@ -75,6 +75,8 @@ const getImages = async () => {
             newImagesBoolean = true;
             console.log(`New image discovered: ${images[i].file}`);
             images[i].metadata = await cli(images[i].meta.path);
+        } else {
+            images[i].metadata = found.metadata;
         }
     }
         
