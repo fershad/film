@@ -70,7 +70,7 @@ const getImages = async () => {
     // });
 
     for(let i = 0; i < images.length; i++) {
-        const found = discoveredImages.find((discoveredImage) => discoveredImage.file === image.file);
+        const found = discoveredImages.find((discoveredImage) => discoveredImage.file === images[i].file);
         if (!found) {
             newImagesBoolean = true;
             console.log(`New image discovered: ${images[i].file}`);
