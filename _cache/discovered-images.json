@@ -123,5 +123,37 @@
       "collection": "Norway",
       "portrait": true
     }
+  },
+  {
+    "file": "001555230039.jpg",
+    "meta": {
+      "path": "static/images/001555230039.jpg",
+      "birthtime": "2024-10-19T14:55:59.028Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "A rare glimpse of sunset",
+      "altText": "A concrete path leads to the water's edge between low shurbs. Small embankments dot the water, with a faint pinkish hue lighting the sky at sunset.",
+      "story": "We didn't get many clear evenings while in Norway, so this sunset was pretty nice to take in after a day of driving The Atlantic Road.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Norway"
+    }
+  },
+  {
+    "file": "001555240013.jpg",
+    "meta": {
+      "path": "static/images/001555240013.jpg",
+      "birthtime": "2024-10-19T14:56:14.790Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Line ups for the ferry",
+      "altText": "A car waits in a numbered line in an otherwise empty parking lot. They are waiting in a cark park by the water for the incoming ferry.",
+      "story": "We got very comfortable with taking the ferry between destinations in the fjords during our time in Norway. They were well maintained, and some even had very comfortable passenger rooms where we could snack and pass the time on the (normally) short trips.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Norway"
+    }
   }
 ]
