@@ -4,6 +4,13 @@
     "meta": {
       "path": "static/images/001555230006.jpg",
       "birthtime": "2024-10-18T14:42:48.285Z"
+    },
+    "metadata": {
+      "title": "Title",
+      "story": "Roadtrip",
+      "year": 2024,
+      "month": 8,
+      "collection": "Norway"
     }
   },
   {
@@ -11,6 +18,13 @@
     "meta": {
       "path": "static/images/001555230025 (1).jpg",
       "birthtime": "2024-10-18T14:42:48.289Z"
+    },
+    "metadata": {
+      "title": "Fjord",
+      "story": "Roadtripping",
+      "year": 2024,
+      "month": 8,
+      "collection": "Norway"
     }
   },
   {
@@ -18,6 +32,13 @@
     "meta": {
       "path": "static/images/001555240004.jpg",
       "birthtime": "2024-10-18T14:42:48.293Z"
+    },
+    "metadata": {
+      "title": "House and lake",
+      "story": "Pitstop",
+      "year": 2024,
+      "month": 7,
+      "collection": "Norway"
     }
   }
 ]

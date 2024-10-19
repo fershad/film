@@ -3,6 +3,7 @@ import fs from "fs/promises";
 import path from "node:path";
 const directory = "static/images";
 const __dirname = import.meta.dirname;
+import cli from './cli.js';
 
 const { sort } = config;
 
@@ -64,13 +65,19 @@ const getImages = async () => {
 
     let newImagesBoolean = false;
     // Check if any new images have been added and console log a message
-    images.forEach((image) => {
+    // images.forEach(async (image) => {
+        
+    // });
+
+    for(let i = 0; i < images.length; i++) {
         const found = discoveredImages.find((discoveredImage) => discoveredImage.file === image.file);
         if (!found) {
             newImagesBoolean = true;
-            console.log(`New image discovered: ${image.file}`);
+            console.log(`New image discovered: ${images[i].file}`);
+            images[i].metadata = await cli(images[i].meta.path);
         }
-    });
+    }
+        
 
     if (!newImagesBoolean && discoveredImages.length === images.length) {
         console.log("No new images discovered.");
