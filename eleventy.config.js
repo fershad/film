@@ -39,4 +39,9 @@ export default async function(eleventyConfig) {
 			decoding: "async",
 		},
 	});
+
+	eleventyConfig.addFilter("prettyJson", (value = '') => {
+		const json = JSON.stringify(value, null, 2);
+		return json;
+	});
 };

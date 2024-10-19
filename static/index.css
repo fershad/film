@@ -1031,7 +1031,7 @@ h1 {
 #main-image {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: var(--size-xl);
   padding: var(--size-3);
 }
 
@@ -1122,4 +1122,26 @@ header nav a {
   padding: var(--size-1) var(--size-2);
   background-color: var(--sand-2);
   color: var(--stone-10);
+}
+
+aside:has(details) {
+  position: absolute;
+}
+
+details > summary {
+  cursor: pointer;
+  padding: var(--size-1) var(--size-2);
+  background-color: var(--sand-2);
+  color: var(--stone-10);
+  width: fit-content;
+  margin: 0;
+}
+
+details > summary + pre {
+  padding: var(--size-3);
+  padding-block-start: 0;
+  background-color: var(--sand-2);
+  color: var(--stone-10);
+  font-family: "Departure Mono", var(--font-mono);
+  font-size: var(--font-size-fluid-0);
 }

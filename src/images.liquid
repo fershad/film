@@ -7,6 +7,12 @@ pagination:
   alias: image
 permalink: "image/{{ image.file | slugify }}/"
 ---
+<aside>
+  <details>
+    <summary>Image Metadata</summary>
+    <pre>{{ image.metadata |  prettyJson }}</pre>
+  </details>
+</aside>
 <section id="main-image">
   <img src="../static/images/{{ image.file }}" alt="" eleventy:widths="800,1600,2200" sizes="100vw" loading="eager" decoding="async" >
 </section>
