@@ -75,5 +75,50 @@
       "collection": "Norway",
       "portrait": true
     }
+  },
+  {
+    "file": "001555270005.jpg",
+    "meta": {
+      "path": "static/images/001555270005.jpg",
+      "birthtime": "2024-10-19T14:41:53.065Z"
+    },
+    "metadata": {
+      "title": "Fjord cruises",
+      "altText": "A view from up high, looking down into a town by a bay in a fjord. The hills and land around the town are green, with low misty cloud floating above. There's a cruise ship parked in the center of the picture, in the middle of the bay in the fjord.",
+      "story": "Tourism is a pretty big part of the economy in Norway's fjord regions, and it's not uncommon to see large cruise ships floating in the bays outside of towns in the area. It wasn't my favourite sight, but this shot did turn out pretty good, ship and all.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Norway"
+    }
+  },
+  {
+    "file": "001555230020.jpg",
+    "meta": {
+      "path": "static/images/001555230020.jpg",
+      "birthtime": "2024-10-19T14:42:02.251Z"
+    },
+    "metadata": {
+      "title": "Red church",
+      "altText": "A church spire bathed in sunlight. The red wood of the church building contrasts with the blue sky behind.",
+      "story": "This Stave Church in Kvernes was different to the others we'd seen on our trip. It looked more like a traditional church, but inside there was still definitely a sea-faring, viking feeling that we experienced in other Stave Churches we visited.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Norway"
+    }
+  },
+  {
+    "file": "001555230019.jpg",
+    "meta": {
+      "path": "static/images/001555230019.jpg",
+      "birthtime": "2024-10-19T14:42:08.174Z"
+    },
+    "metadata": {
+      "title": "Seagulls",
+      "altText": "Two seagulls sitting on a railing, the Atlantic Ocean behind them.",
+      "story": "Regular companions during our time on the Atlantic Coast. These two were very small compared to some of the other seagulls that we encountered.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Norway"
+    }
   }
 ]
