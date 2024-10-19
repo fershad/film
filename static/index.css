@@ -1153,6 +1153,21 @@ aside {
   text-align: left;
 }
 
+footer {
+  display: block;
+  margin: 0 auto;
+  margin-block-start: var(--size-5);
+  max-width: var(--size-xl);
+  padding: var(--size-3);
+  padding-block-end: var(--size-5);
+  text-align: center;
+}
+
+footer a {
+  color: var(--stone-10);
+  background: var(--sand-2);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--stone-10);
