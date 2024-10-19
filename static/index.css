@@ -1168,6 +1168,10 @@ footer a {
   background: var(--sand-2);
 }
 
+footer p {
+  line-height: 1.95;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--stone-10);
