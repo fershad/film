@@ -27,7 +27,7 @@
   {%- for image in collections.images | reverse %}
   {%- set absolutePostUrl %}{{ image.url | htmlBaseUrl(metadata.base) }}{% endset %}
   <entry>
-    <title>{{ image.data.title }}</title>
+    <title>{{ image.data.imageTitle }}</title>
     <link href="{{ absolutePostUrl }}" />
     <updated>{{ image.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
