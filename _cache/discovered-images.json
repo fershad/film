@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "file": "001555230006.jpg",
+    "meta": {
+      "path": "static/images/001555230006.jpg",
+      "birthtime": "2024-10-18T14:42:48.285Z"
+    },
+    "metadata": {
+      "title": "The Atlantic Road",
+      "altText": "Looking down a two lane highway road  towards an elegant bridge that curves to the left as it arches towards the blue sky.",
+      "story": "Driving The Atlantic Road was great fun, with plenty of amazing scenery along the way. This stop, at a famous Bridge along the route was a highlight. We didn't plan to stop there for long, but ended up spending about an hour walking along the highway to get photos and watch people fish.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Norway"
+    }
+  },
+  {
+    "file": "001555230025 (1).jpg",
+    "meta": {
+      "path": "static/images/001555230025 (1).jpg",
+      "birthtime": "2024-10-18T14:42:48.289Z"
+    },
+    "metadata": {
+      "title": "Grasslands and fjords",
+      "altText": "The foreground is filled with green grassland, while the middle of the shot features deep blue water which has filled the Fjord.",
+      "story": "Road trips and relaxing. Norway did the trick with both.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Norway"
+    }
+  },
+  {
+    "file": "001555240004.jpg",
+    "meta": {
+      "path": "static/images/001555240004.jpg",
+      "birthtime": "2024-10-18T14:42:48.293Z"
+    },
+    "metadata": {
+      "title": "Reflection of a house",
+      "altText": "A red house sits beside a lake. A bridge is to the left of it. The house and bridge are mirrored in the calm waters of the lake.",
+      "story": "When we started driving in Norway, we found it hard not to stop every few kilometers at another place that just made us go \"wow!!\". This photo was taken during a quick lunch stop on our first day driving from Bergen to Oda.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Norway"
+    }
+  }
+]
