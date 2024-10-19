@@ -42,6 +42,8 @@ export default async function(eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("prettyJson", (value = '') => {
+		// Remove the altText from the JSON
+		delete value.altText;
 		const json = JSON.stringify(value, null, 2);
 		return json;
 	});
