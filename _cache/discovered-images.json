@@ -88,7 +88,8 @@
       "story": "Tourism is a pretty big part of the economy in Norway's fjord regions, and it's not uncommon to see large cruise ships floating in the bays outside of towns in the area. It wasn't my favourite sight, but this shot did turn out pretty good, ship and all.",
       "year": 2024,
       "month": 8,
-      "collection": "Norway"
+      "collection": "Norway",
+      "portrait": false
     }
   },
   {
@@ -103,7 +104,8 @@
       "story": "This Stave Church in Kvernes was different to the others we'd seen on our trip. It looked more like a traditional church, but inside there was still definitely a sea-faring, viking feeling that we experienced in other Stave Churches we visited.",
       "year": 2024,
       "month": 8,
-      "collection": "Norway"
+      "collection": "Norway",
+      "portrait": true
     }
   },
   {
@@ -118,7 +120,8 @@
       "story": "Regular companions during our time on the Atlantic Coast. These two were very small compared to some of the other seagulls that we encountered.",
       "year": 2024,
       "month": 8,
-      "collection": "Norway"
+      "collection": "Norway",
+      "portrait": true
     }
   }
 ]
