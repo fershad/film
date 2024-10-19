@@ -8,6 +8,11 @@ export const config = {
       type: "input",
       message: "Enter the image title:",
     },
+    altText: {
+      name: "altText",
+      type: "input",
+      message: "Describe the content of the image (used for alt text on website):",
+    },
     story: {
       name: "story",
       type: "input",
