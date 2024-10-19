@@ -4,6 +4,14 @@
     "meta": {
       "path": "static/images/001555230006.jpg",
       "birthtime": "2024-10-18T14:42:48.285Z"
+    },
+    "metadata": {
+      "title": "The Atlantic Road",
+      "story": "Driving The Atlantic Road was great fun, with plenty of amazing scenery along the way. This stop, at a famous Bridge along the route was a highlight. We didn't plan to stop there for long, but ended up spending about an hour walking along the highway to get photos and watch people fish.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Norway",
+      "portrait": false
     }
   },
   {
@@ -11,6 +19,14 @@
     "meta": {
       "path": "static/images/001555230025 (1).jpg",
       "birthtime": "2024-10-18T14:42:48.289Z"
+    },
+    "metadata": {
+      "title": "Grasslands and fjords",
+      "story": "Road trips and relaxing. Norway did the trick with both.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Norway",
+      "portrait": false
     }
   },
   {
@@ -18,6 +34,14 @@
     "meta": {
       "path": "static/images/001555240004.jpg",
       "birthtime": "2024-10-18T14:42:48.293Z"
+    },
+    "metadata": {
+      "title": "Reflection of a house",
+      "story": "When we started driving in Norway, we found it hard not to stop every few kilometers at another place that just made us go \"wow!!\". This photo was taken during a quick lunch stop on our first day driving from Bergen to Oda.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Norway",
+      "portrait": true
     }
   },
   {
@@ -25,6 +49,15 @@
     "meta": {
       "path": "static/images/001555240067.jpg",
       "birthtime": "2024-10-19T10:49:50.551Z"
+    },
+    "metadata": {
+      "title": "Boat on the fjord",
+      "altText": "Wooden boat huts sit on the edge of a fjord, with a small boat moored in front of them. The water is calm and the sky is overcast. Mountains in the background have low cloud cover.",
+      "story": "Serene scenes like this were common while we drove alongside the fjords in Norway. Unfortunately for us we had mostly rainy weather during the day, otherwise we would have probably taken our chances to jump in as well!",
+      "collection": "Norway",
+      "year": 2024,
+      "month": 8,
+      "portrait": false
     }
   },
   {
@@ -39,7 +72,8 @@
       "story": "Probably my favourite part of driving around Norway during the summer was stopping off at little roadside stalls like this one that dotted the countryside. In each was a different selection of local fruits and vegetables for sale, most of the time paid for by putting some cash into an honesty box. The berries were absolutely fantastic, better than anything I've had elsewhere.",
       "year": 2024,
       "month": 8,
-      "collection": "Norway"
+      "collection": "Norway",
+      "portrait": true
     }
   }
 ]

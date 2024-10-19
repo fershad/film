@@ -16,23 +16,38 @@ eleventyComputed:
 ---
 <h1>{{ image.metadata.title }}</h1>
 <aside>
-  <details>
-    <summary>Image Metadata</summary>
-    <pre>{{ image.metadata |  prettyJson }}</pre>
-  </details>
+  {% if image.metadata.collection %}
+    <div><small>Collection: {{ image.metadata.collection }}</small></div>
+  {% endif %}
+  {% if image.metadata.year AND image.metadata.month %}
+    {% capture datestamp %}
+      {{ image.metadata.year }}-{{ image.metadata.month }}
+    {% endcapture %}
+    <div>
+      <time datetime="{{ image.metadata.year }}-{{ image.metadata.month }}">{{ datestamp | date: "%Y-%m" }}</time>
+    </div>
+  {% endif %}
 </aside>
-<section id="main-image">
-  <img src="../static/images/{{ image.file }}" alt="{{ image.metadata.altText }}" eleventy:widths="800,1600,2200" sizes="100vw" loading="eager" decoding="async" >
-</section>
-<nav role="image-navigation" class="image-nav">
-  <ol>
-    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><span>
-      <img src="../static/images/{{ pagination.page.previous.file }}" alt="Previous image" height="110" width="190" sizes="30vw">
-      <p>Previous</p>
-    </span></a>{% endif %}</li>
-    <li><span>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">
-      <img src="../static/images/{{ pagination.page.next.file }}" alt="Next image"  height="110" width="190" sizes="30vw">
-      <p>Next</p>
-    </a></span>{% endif %}</li>
-  </ol>
-</nav>
+{% if image.metadata.portrait %}
+  {% assign orientation = "portrait" %}
+{% else %}
+  {% assign orientation = "landscape" %}
+{% endif %}
+<div class="image-holder" data-orientation="{{ orientation }}">
+  <section id="main-image">
+    <p>{{ image.metadata.story }}</p>
+    <img src="../static/images/{{ image.file }}" alt="{{ image.metadata.altText }}" eleventy:widths="800,1600,2200" sizes="100vw" loading="eager" decoding="async" >
+  </section>
+  <nav role="image-navigation" class="image-nav">
+    <ol>
+      <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><span>
+        <img src="../static/images/{{ pagination.page.previous.file }}" alt="Previous image" height="110" width="190" sizes="30vw">
+        <p>Previous</p>
+      </span></a>{% endif %}</li>
+      <li><span>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">
+        <img src="../static/images/{{ pagination.page.next.file }}" alt="Next image"  height="110" width="190" sizes="30vw">
+        <p>Next</p>
+      </a></span>{% endif %}</li>
+    </ol>
+  </nav>
+</div>
