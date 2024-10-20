@@ -1240,6 +1240,10 @@ article a {
   #gallery-holder nav ul li a {
     color: var(--stone-5);
   }
+
+  .location {
+    color: var(--stone-10);
+  }
 }
 
 /* Set for screen sizes > 768px */
