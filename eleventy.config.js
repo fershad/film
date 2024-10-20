@@ -48,6 +48,7 @@ export default async function(eleventyConfig) {
 		return json;
 	});
 
+
 	eleventyConfig.addPlugin(pluginRss);
 
 };

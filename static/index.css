@@ -1172,6 +1172,13 @@ footer p {
   line-height: 1.95;
 }
 
+.group-name {
+  color: var(--stone-10);
+  background-color: var(--sand-2);
+  display: grid;
+  place-items: center;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--stone-10);
