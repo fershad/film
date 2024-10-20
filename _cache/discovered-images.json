@@ -11,7 +11,9 @@
       "year": 2024,
       "month": 8,
       "collection": "Norway",
-      "portrait": false
+      "portrait": false,
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
     }
   },
   {
@@ -26,7 +28,9 @@
       "year": 2024,
       "month": 8,
       "collection": "Norway",
-      "portrait": false
+      "portrait": false,
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
     }
   },
   {
@@ -41,7 +45,9 @@
       "year": 2024,
       "month": 8,
       "collection": "Norway",
-      "portrait": true
+      "portrait": true,
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
     }
   },
   {
@@ -57,7 +63,9 @@
       "collection": "Norway",
       "year": 2024,
       "month": 8,
-      "portrait": false
+      "portrait": false,
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
     }
   },
   {
@@ -73,7 +81,9 @@
       "year": 2024,
       "month": 8,
       "collection": "Norway",
-      "portrait": true
+      "portrait": true,
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
     }
   },
   {
@@ -89,7 +99,9 @@
       "year": 2024,
       "month": 8,
       "collection": "Norway",
-      "portrait": false
+      "portrait": false,
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
     }
   },
   {
@@ -105,7 +117,9 @@
       "year": 2024,
       "month": 8,
       "collection": "Norway",
-      "portrait": true
+      "portrait": true,
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
     }
   },
   {
@@ -121,7 +135,9 @@
       "year": 2024,
       "month": 8,
       "collection": "Norway",
-      "portrait": true
+      "portrait": true,
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
     }
   },
   {
@@ -137,7 +153,9 @@
       "story": "We didn't get many clear evenings while in Norway, so this sunset was pretty nice to take in after a day of driving The Atlantic Road.",
       "year": 2024,
       "month": 8,
-      "collection": "Norway"
+      "collection": "Norway",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
     }
   },
   {
@@ -153,7 +171,9 @@
       "story": "We got very comfortable with taking the ferry between destinations in the fjords during our time in Norway. They were well maintained, and some even had very comfortable passenger rooms where we could snack and pass the time on the (normally) short trips.",
       "year": 2024,
       "month": 8,
-      "collection": "Norway"
+      "collection": "Norway",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
     }
   }
 ]

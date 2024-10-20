@@ -1102,11 +1102,7 @@ nav.image-nav ol li span p {
   position: absolute;
   top: 50%;
   left: 50%;
-  tra #gallery-holder nav ul {
-    flex-direction: column;
-    gap: var(--size-1);
-  }
-  nsform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: var(--sand-2);
   color: var(--stone-10);
   transition: opacity 0.45s var(--ease-5);
@@ -1123,31 +1119,6 @@ header nav a {
   color: var(--stone-10);
 }
 
-aside:has(details) {
-  position: absolute;
-  z-index: 99;
-}
-
-details > summary {
-  cursor: pointer;
-  padding: var(--size-1) var(--size-2);
-  background-color: var(--sand-2);
-  color: var(--stone-10);
-  width: fit-content;
-  margin: 0;
-}
-
-details > summary + pre {
-  padding: var(--size-3);
-  padding-block-start: 0;
-  background-color: var(--sand-2);
-  color: var(--stone-10);
-  font-family: "Departure Mono", var(--font-mono);
-  font-size: var(--font-size-fluid-0);
-  max-width: var(--size-lg);
-  text-wrap-mode: wrap;
-}
-
 div > time {
   font-size: max(0.5em, var(--font-size-0));
   max-inline-size: var(--size-content-1);
@@ -1155,6 +1126,10 @@ div > time {
 
 aside {
   text-align: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10ch, 15ch));
+  gap: var(--size-3);
+  margin-block-end: var(--size-4);
 }
 
 footer {

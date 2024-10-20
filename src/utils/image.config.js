@@ -51,5 +51,22 @@ export const config = {
         "India",
       ],
     },
+    camera: {
+      name: "camera",
+      type: "list",
+      message: "Enter the camera used:",
+      choices: [
+        "Olympus Pen EE-3",
+      ]
+    },
+    film: {
+      name: "film",
+      type: "list",
+      message: "Enter the film used:",
+      choices: [
+        "Kodak Portra 400",
+        "Fujifilm Fujicolor 200",
+      ],
+    },
   },
 };
