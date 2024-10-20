@@ -49,6 +49,13 @@ const readFiles = async () => {
  * @returns {Promise<Array<{file: string, meta: {path: string, birthtime: Date}}>>} A promise that resolves to an array of sorted image objects with metadata.
  */
 const getImages = async () => {
+    let limit = undefined;
+    console.log(process.argv);
+    if (process.argv[2]) {
+        limit = Number(process.argv[2]);
+        console.log(`Limit set to ${limit}.`);
+    }
+
     const discoveredImagesFile = await fs.readFile(path.resolve(__dirname, "../../_cache/discovered-images.json"), "utf-8").catch(() => null);
     const discoveredImages = JSON.parse(discoveredImagesFile) || [];
     let images = await readFiles();
@@ -64,6 +71,7 @@ const getImages = async () => {
     }
 
     let newImagesBoolean = false;
+    let newImagesCount = 0;
     // Check if any new images have been added and console log a message
     // images.forEach(async (image) => {
         
@@ -75,6 +83,10 @@ const getImages = async () => {
             newImagesBoolean = true;
             console.log(`New image discovered: ${images[i].file}`);
             images[i].metadata = await cli(images[i].meta.path);
+            newImagesCount++;
+            if (limit && newImagesCount > limit) {
+                break;
+            }
         } else {
             images[i].metadata = found.metadata;
         }
