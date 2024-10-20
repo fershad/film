@@ -1018,7 +1018,8 @@ h1 {
     auto-fit,
     minmax(min(100%, var(--min)), var(--min))
   );
-  max-width: var(--size-xl);
+  /* max-width: var(--size-xl); */
+  width: 100%;
   margin: 0 auto;
   padding: var(--size-3);
 }
@@ -1197,7 +1198,15 @@ footer p {
 #gallery-holder nav ul {
   flex-direction: column;
   gap: var(--size-1);
+}
+
+#gallery-holder nav ul li {
+  display: block;
+}
+
+#gallery-holder nav ul li a {
   color: var(--stone-7);
+  font-size: var(--font-size-fluid-0);
 }
 
 article {
@@ -1228,7 +1237,7 @@ article a {
     background-color: var(--sand-2);
   }
 
-  #gallery-holder nav ul {
+  #gallery-holder nav ul li a {
     color: var(--stone-5);
   }
 }

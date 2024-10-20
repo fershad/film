@@ -72,10 +72,6 @@ const getImages = async () => {
 
     let newImagesBoolean = false;
     let newImagesCount = 0;
-    // Check if any new images have been added and console log a message
-    // images.forEach(async (image) => {
-        
-    // });
 
     for(let i = 0; i < images.length; i++) {
         const found = discoveredImages.find((discoveredImage) => discoveredImage.file === images[i].file);
@@ -85,6 +81,8 @@ const getImages = async () => {
             images[i].metadata = await cli(images[i].meta.path);
             newImagesCount++;
             if (limit && newImagesCount > limit) {
+                // Remove any images that have not been processed
+                images = images.slice(0, i+1);
                 break;
             }
         } else {
