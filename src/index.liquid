@@ -1,5 +1,6 @@
 ---
 layout: base.liquid
+pageType: gallery
 ---
 {% assign group = site.gallery.group %}
 {% assign groupByField = site.gallery.groupBy %}
@@ -33,6 +34,7 @@ layout: base.liquid
                         </a>
                         </li>
             {% endfor %}
+            <li class="border-top"><a href="/about">About</a></li>
         </ul>
     </nav>
 </div>
