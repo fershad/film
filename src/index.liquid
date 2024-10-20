@@ -5,22 +5,35 @@ layout: base.liquid
 {% assign groupByField = site.gallery.groupBy %}
 {% assign groupBy = "metadata." |  concat: groupByField %}
 
-{% assign galleryImages = images %}
-<section id="gallery">
-{% if group %}
-{% assign galleryImages = images | group_by: groupBy %}
-    {% for grouping in galleryImages %}
-        <div id="{{ groupByField }}-{{ grouping.name | downcase }}" class="group-name">
-            <h2>{{ grouping.name }}</h2>
-        </div>
-        {% for image in grouping.items %}
-            <a href="/image/{{ image.file | slugify }}"><img src="../static/images/{{ image.file }}" alt="{{ image.metadata.altText }}" sizes="40vw" height="400" width="400"></a>    
+<div id="gallery-holder">
+    {% assign galleryImages = images %}
+    <section id="gallery">
+    {% if group %}
+    {% assign galleryImages = images | group_by: groupBy %}
+        {% for grouping in galleryImages %}
+            <div id="{{ groupByField }}-{{ grouping.name | downcase }}" class="group-name">
+                <h2>{{ grouping.name }}</h2>
+            </div>
+            {% for image in grouping.items %}
+                <a href="/image/{{ image.file | slugify }}"><img src="../static/images/{{ image.file }}" alt="{{ image.metadata.altText }}" sizes="40vw" height="400" width="400"></a>
+            {% endfor %}
         {% endfor %}
-    {% endfor %}
-    {% else %}    
-    {% for image in galleryImages %}
-        <a href="/image/{{ image.file | slugify }}"><img src="../static/images/{{ image.file }}" alt="{{ image.metadata.altText }}" sizes="40vw" height="400" width="400"></a>
-    {% endfor %}
-{% endif %}
-</section>
+        {% else %}
+        {% for image in galleryImages %}
+            <a href="/image/{{ image.file | slugify }}"><img src="../static/images/{{ image.file }}" alt="{{ image.metadata.altText }}" sizes="40vw" height="400" width="400"></a>
+        {% endfor %}
+    {% endif %}
+    </section>
+    <nav>
+        <ul>
+            {% for grouping in galleryImages %}
+                <li>
+                        <a href="#{{ groupByField}}-{{ grouping.name | downcase }}">
+                        {{ grouping.name }}
+                        </a>
+                        </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</div>
 
