@@ -397,5 +397,214 @@
       "film": "Kodak Portra 400",
       "location": "Geiranger"
     }
+  },
+  {
+    "file": "001555260048.jpg",
+    "meta": {
+      "path": "static/images/001555260048.jpg",
+      "birthtime": "2024-10-20T08:44:00.244Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Boat at sunset",
+      "altText": "A small single-mast boat sails in a lake at sunset. The lake is lit up in a orange hue, while the sky behind fades from blue to orange. Tree mask the foreground of the shot.",
+      "story": "We had one night in Hamburg as we travelled from the UK to Norway. This was the sunset we were greeted with when we arrived.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Germany",
+      "location": "Hamburg",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "001555260040.jpg",
+    "meta": {
+      "path": "static/images/001555260040.jpg",
+      "birthtime": "2024-10-20T08:44:00.248Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Wind turbines from the train",
+      "altText": "Wind turbines spinning in the distance, in a green field. Taken from a moving train.",
+      "story": "",
+      "year": 2024,
+      "month": 8,
+      "collection": "Germany",
+      "location": "Hamburg",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "001555260050.jpg",
+    "meta": {
+      "path": "static/images/001555260050.jpg",
+      "birthtime": "2024-10-20T08:44:00.260Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Pigeon and scooter",
+      "altText": "A rental scooter leans up against an electricity box, while a pigeon walks alongside it. A red building in the background with dark windows and white flower boxes.",
+      "story": "I don't know why, but I like taking pictures of rental scooters in Europe.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Germany",
+      "location": "Hamburg",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "001555260072.jpg",
+    "meta": {
+      "path": "static/images/001555260072.jpg",
+      "birthtime": "2024-10-20T08:44:00.264Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Waterways at sunset",
+      "altText": "A building sits between two canals that branch off. The scene is dark, with only the sunset in the background illuminating part of the shot.",
+      "story": "After a long day walking, we reached the canal district of Hamburg at sunset. While we didn't go on a cruise, we did wander around the old warehouses which are now home to some trendy companies.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Germany",
+      "location": "Hamburg",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "001555260067.jpg",
+    "meta": {
+      "path": "static/images/001555260067.jpg",
+      "birthtime": "2024-10-20T08:44:00.271Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Summer by the lake",
+      "altText": "People sit facing a lake under the summer sun & clear skies. A gyser in the middle of the lake shoots water into the sky, creating a small rainbow.",
+      "story": "I think we were eating ice cream by this time of the day.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Germany",
+      "location": "Hamburg",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "001555260058.jpg",
+    "meta": {
+      "path": "static/images/001555260058.jpg",
+      "birthtime": "2024-10-20T08:44:00.275Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "St Pauli Bunker",
+      "altText": "A large concrete construction rises up into the frame. It is covered topped with trees and greenery.",
+      "story": "The St Pauli Bunker is immense. It dominates the skyline of the surrounding area, and would have been something to behold during the war I'm sure. It's now open to tourists who can climb to the top, get a coffee or a meal on the way up. I even think I saw a hotel inside.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Germany",
+      "location": "St Pauli",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "001555260057.jpg",
+    "meta": {
+      "path": "static/images/001555260057.jpg",
+      "birthtime": "2024-10-20T08:44:00.278Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Hamburg from up high",
+      "altText": "A lookout over the skyline of Hamburg. Several spires poke out admist the otherwise lowrise buildings.",
+      "story": "",
+      "year": 2024,
+      "month": 8,
+      "collection": "Germany",
+      "location": "St Pauli",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "001555260047 (1).jpg",
+    "meta": {
+      "path": "static/images/001555260047 (1).jpg",
+      "birthtime": "2024-10-20T08:44:16.970Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Sunset by the lake",
+      "altText": "Boats are moared in a lake as the sun sets behind buildings in the distance. In the foreground the shapes of some people can be seen sitting looking out over the lake.",
+      "story": "The scene around Außenalster (Outer Alster Lake) at sunset of a Summer's day.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Germany",
+      "location": "Hamburg",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "001555260043 (1).jpg",
+    "meta": {
+      "path": "static/images/001555260043 (1).jpg",
+      "birthtime": "2024-10-20T08:44:16.982Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Light through the station",
+      "altText": "Rays of sunlight shine through a clock tower sitting above a glass covering. Whispy clouds over the blue sky in the background.",
+      "story": "A sunset picture from outside Hamburg railway station. One of the pleasures of a European Summer is having the sun up so late into the day - I think this photo was taken after dinner (maybe around 9:30pm).",
+      "year": 2024,
+      "month": 8,
+      "collection": "Germany",
+      "location": "Hamburg",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "001555260070.jpg",
+    "meta": {
+      "path": "static/images/001555260070.jpg",
+      "birthtime": "2024-10-20T08:44:16.996Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Rathaus",
+      "altText": "A sign saying 'Rathaus' is in the foreground of the image, place on a steel railing. In the background is an old brick building with a sign saying 'Schlussel Keller'.",
+      "story": "Central Hamburg, around the Town Hall, is a mix of old buildings and new constructions. Like most places these days, even the older buildings are starting to become home to newer, trendier shops and eateries.",
+      "year": 2024,
+      "month": 8,
+      "collection": "Germany",
+      "location": "Hamburg",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "001555260052.jpg",
+    "meta": {
+      "path": "static/images/001555260052.jpg",
+      "birthtime": "2024-10-20T08:44:17.015Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "St Pauli Bunker",
+      "altText": "A concrete building dominates the sky. It's base is bare, but the top is covered with trees.",
+      "story": "",
+      "year": 2024,
+      "month": 8,
+      "collection": "Germany",
+      "location": "St Pauli",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
   }
 ]
