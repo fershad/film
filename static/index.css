@@ -1132,6 +1132,10 @@ aside {
   margin-block-end: var(--size-4);
 }
 
+.border-top {
+  border-top: 1px solid var(--sand-2);
+}
+
 footer {
   display: block;
   margin: 0 auto;
@@ -1148,6 +1152,7 @@ footer a {
 }
 
 footer p {
+  font-size: var(--font-size-fluid-0);
   line-height: 1.95;
 }
 
@@ -1175,6 +1180,23 @@ footer p {
   color: var(--stone-7);
 }
 
+article {
+  display: block;
+  margin: 0 auto;
+  max-width: var(--size-xl);
+  padding: var(--size-3);
+}
+
+article > p {
+  margin-block: var(--size-3);
+  line-height: 1.95;
+}
+
+article a {
+  color: var(--stone-10);
+  background: var(--sand-2);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--stone-10);
@@ -1184,6 +1206,10 @@ footer p {
   header h1 {
     color: var(--stone-10);
     background-color: var(--sand-2);
+  }
+
+  #gallery-holder nav ul {
+    color: var(--stone-5);
   }
 }
 

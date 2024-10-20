@@ -3,11 +3,11 @@
             <h1>{{ title |  default: site.title }}</h1>
             <small>{{ tagline | default: site.tagline }}</small>
         </span>
-        {% if pageType == 'image' %}
+        {% unless pageType == 'gallery' %}
             <nav>
                 <ul>
                     <li><a href="/">&larr; Back to gallery</a></li>
                 </ul>
             </nav>
-        {% endif %}
+        {% endunless %}
     </header>
