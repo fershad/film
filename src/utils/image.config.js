@@ -1,6 +1,9 @@
 export const config = {
   // Sort order for the images
   sort: "asc", // "asc" or "desc"
+  // Group images in the Gallery view
+  group: true, // true or false
+  groupBy: "collection", // "collection" or "year"
   // Image metadata
   metadata: {
     portrait: {

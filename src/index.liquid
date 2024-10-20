@@ -1,8 +1,24 @@
 ---
 layout: base.liquid
 ---
+{% assign group = site.gallery.group %}
+{% assign groupBy = site.gallery.groupBy %}
+
+{% assign galleryImages = images %}
 <section id="gallery">
-    {% for image in images %}
+{% if group %}
+    {% for image in galleryImages %}
+        {% if forloop.first %}
+            <div>
+                <h2 id="{{ groupBy }}-{{ image.metadata[groupBy] | downcase }}">{{ image.metadata[groupBy] }}</h2>
+            </div>
+        {% endif %}
         <a href="/image/{{ image.file | slugify }}"><img src="../static/images/{{ image.file }}" alt="{{ image.metadata.altText }}" sizes="40vw" height="400" width="400"></a>
     {% endfor %}
+    {% else %}    
+    {% for image in galleryImages %}
+        <a href="/image/{{ image.file | slugify }}"><img src="../static/images/{{ image.file }}" alt="{{ image.metadata.altText }}" sizes="40vw" height="400" width="400"></a>
+    {% endfor %}
+{% endif %}
 </section>
+
