@@ -13,7 +13,9 @@
       "collection": "Norway",
       "portrait": false,
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "The Atlantic Road",
+      "altText": "Looking down a two-lane highway road that turns right towards a bridge which arches towards the sky."
     }
   },
   {
@@ -30,7 +32,9 @@
       "collection": "Norway",
       "portrait": false,
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Kvernes",
+      "altText": "A fjord stretches out to the horizon, with a bridge crossing in the distance. The foreground is a grassy field with a few trees."
     }
   },
   {
@@ -47,7 +51,9 @@
       "collection": "Norway",
       "portrait": true,
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Norheimsund",
+      "altText": "A house and bridge is reflected in the still waters of a fjord. The sky is overcast, and the water is calm."
     }
   },
   {
@@ -65,7 +71,8 @@
       "month": 8,
       "portrait": false,
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Lofthus"
     }
   },
   {
@@ -83,7 +90,8 @@
       "collection": "Norway",
       "portrait": true,
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Lofthus"
     }
   },
   {
@@ -101,7 +109,8 @@
       "collection": "Norway",
       "portrait": false,
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Vikøyri"
     }
   },
   {
@@ -119,7 +128,8 @@
       "collection": "Norway",
       "portrait": true,
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Kvernes"
     }
   },
   {
@@ -137,7 +147,8 @@
       "collection": "Norway",
       "portrait": true,
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "The Atlantic Road"
     }
   },
   {
@@ -155,7 +166,8 @@
       "month": 8,
       "collection": "Norway",
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Ersholmen"
     }
   },
   {
@@ -173,7 +185,8 @@
       "month": 8,
       "collection": "Norway",
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Kvanndal"
     }
   },
   {
@@ -191,7 +204,8 @@
       "month": 8,
       "collection": "Norway",
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Kvanndal"
     }
   },
   {
@@ -209,7 +223,8 @@
       "month": 8,
       "collection": "Norway",
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Norheimsund"
     }
   },
   {
@@ -227,7 +242,8 @@
       "month": 8,
       "collection": "Norway",
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Vøringsfossen"
     }
   },
   {
@@ -245,7 +261,8 @@
       "month": 8,
       "collection": "Norway",
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Oda"
     }
   },
   {
@@ -263,7 +280,8 @@
       "month": 8,
       "collection": "Norway",
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Utvik"
     }
   },
   {
@@ -281,7 +299,8 @@
       "month": 8,
       "collection": "Norway",
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Vikøyri"
     }
   },
   {
@@ -299,7 +318,8 @@
       "month": 8,
       "collection": "Norway",
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Vikøyri"
     }
   },
   {
@@ -317,7 +337,8 @@
       "month": 8,
       "collection": "Norway",
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Vikøyri"
     }
   },
   {
@@ -335,7 +356,8 @@
       "month": 8,
       "collection": "Norway",
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Sognefjord"
     }
   },
   {
@@ -353,7 +375,8 @@
       "month": 8,
       "collection": "Norway",
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Geiranger"
     }
   },
   {
@@ -371,7 +394,8 @@
       "month": 8,
       "collection": "Norway",
       "camera": "Olympus Pen EE-3",
-      "film": "Kodak Portra 400"
+      "film": "Kodak Portra 400",
+      "location": "Geiranger"
     }
   }
 ]

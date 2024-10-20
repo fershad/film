@@ -1132,6 +1132,26 @@ aside {
   margin-block-end: var(--size-4);
 }
 
+.location {
+  display: block;
+  width: max-content;
+  background: var(--sand-2);
+  padding-inline: var(--size-1);
+}
+
+.location svg {
+  margin-inline-end: var(--size-1);
+  display: inline-block;
+}
+
+.location span {
+  width: max-content;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0;
+  margin-block-end: var(--size-2);
+}
+
 .border-top {
   border-top: 1px solid var(--sand-2);
 }

@@ -51,6 +51,11 @@ export const config = {
         "India",
       ],
     },
+    location: {
+      name: "location",
+      type: "input",
+      message: "Enter the image location:",
+    },
     camera: {
       name: "camera",
       type: "list",
