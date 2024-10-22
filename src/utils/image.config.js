@@ -1,5 +1,5 @@
 import { collections } from "./collections.js";
-
+import { years, months } from "./helpers.js";
 
 export const config = {
   // Sort order for the images
@@ -31,13 +31,15 @@ export const config = {
     },
     year: {
       name: "year",
-      type: "number",
+      type: "list",
       message: "Enter the image year (YYYY e.g 2024):",
+      choices: years,
     },
     month: {
       name: "month",
-      type: "number",
+      type: "list",
       message: "Enter the image month (MM e.g 08):",
+      choices: months
     },
     collection: {
       name: "collection",
