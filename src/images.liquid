@@ -14,6 +14,8 @@ eleventyComputed:
   path: "{{image.meta.path}}"
   alt: "{{image.metadata.altText}}"
   collection: "{{image.metadata.collection}}"
+  backLinkWording: "Back to {{ site.gallery.groupBy |  downcase}}"
+  groupingName: "{{image.metadata.collection}}"
 ---
 {% assign hasLocation = image.metadata.location | size %}
 {% if image.metadata.collection and hasLocation > 0 %}

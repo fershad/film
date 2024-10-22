@@ -1,12 +1,21 @@
 <header>
         <span>
-            <h1>{{ title |  default: site.title }}</h1>
+            <h1>Film</h1>
             <small>{{ tagline | default: site.tagline }}</small>
         </span>
         {% unless pageType == 'gallery' %}
             <nav>
                 <ul>
-                    <li><a href="/">&larr; Back to gallery</a></li>
+                    <li>
+                        {% assign group = site.gallery.group %}
+                        {% if group %}
+                            {% assign groupByField = site.gallery.groupBy %}
+                            <a href="/#{{site.gallery.groupBy |  downcase }}-{{ groupingName |  downcase }}">&larr; {{ backLinkWording }}</a>
+                        {% else %}                            
+                        <a href="/">&larr; Back to gallery</a>
+                        {% endif %}
+
+                    </li>
                 </ul>
             </nav>
         {% endunless %}

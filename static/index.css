@@ -96,7 +96,7 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   :where(html) {
-    scroll-behavior: smooth;
+    scroll-behavior: initial;
   }
 }
 @media (prefers-reduced-motion: no-preference) {
