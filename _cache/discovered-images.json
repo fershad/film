@@ -1613,5 +1613,138 @@
       "camera": "Olympus Pen EE-3",
       "film": "Kodak Portra 400"
     }
+  },
+  {
+    "file": "0014_4A.jpg",
+    "meta": {
+      "path": "static/images/0014_4A.jpg",
+      "birthtime": "2024-10-22T05:17:25.809Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Kreuzberg sunset",
+      "altText": "Looking down a street line with parked cars towards the setting sun.",
+      "story": "Our first evening in Berlin after landing that morning. We were doing our best to keep going despite the jet lag. This sunset as we walked around Kreuzberg certainly helped.",
+      "year": 2023,
+      "month": 3,
+      "collection": "Germany",
+      "location": "Berlin",
+      "camera": "Olympus Pen EE-3",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "0018_6A.jpg",
+    "meta": {
+      "path": "static/images/0018_6A.jpg",
+      "birthtime": "2024-10-22T05:17:25.818Z"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Sunset from Viktoriapark",
+      "altText": "Church spires stick up above the skyline that's also dotted with trees. The setting sun in the background casts a orange and purple hue.",
+      "story": "More wandering on our first day in Berlin. The 20 hours of travel from Taipei was taking its toll, but we made it to our destination at Viktoriapark just in time to catch a wicked sunset.",
+      "year": 2023,
+      "month": 3,
+      "collection": "Germany",
+      "location": "Berlin",
+      "camera": "Olympus Pen EE-3",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "0040_17A.jpg",
+    "meta": {
+      "path": "static/images/0040_17A.jpg",
+      "birthtime": "2024-10-22T05:17:25.826Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Church. Tree. Person.",
+      "altText": "A person walks through the left of this photo that captures a leafless tree standing in front of a cream coloured church building.",
+      "story": "We spent a grey afternoon walking around the small town of Goslar, a few hours outside of Berlin.",
+      "year": 2023,
+      "month": 3,
+      "collection": "Germany",
+      "location": "Goslar",
+      "camera": "Olympus Pen EE-3",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "0047_21.jpg",
+    "meta": {
+      "path": "static/images/0047_21.jpg",
+      "birthtime": "2024-10-22T05:17:25.830Z"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Stream through the town",
+      "altText": "A stream flows under a bridge on the right of the frame. It is flanked by cream coloured buildings on the right, and a cobbled road and more old German-style buildings on the left.",
+      "story": "As the evening set in the streets of Goslar became ever quieter.",
+      "year": 2023,
+      "month": 3,
+      "collection": "Germany",
+      "location": "Goslar",
+      "camera": "Olympus Pen EE-3",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "0049_22.jpg",
+    "meta": {
+      "path": "static/images/0049_22.jpg",
+      "birthtime": "2024-10-22T05:17:25.834Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Cobbled streets & old houses",
+      "altText": "A cobbled street curves between old, German-style houses.",
+      "story": "Walking through the old streets of Goslar was a nice way to spend the afternoon. Turns out Siemens was founded there.",
+      "year": 2023,
+      "month": 3,
+      "collection": "Germany",
+      "location": "Goslar",
+      "camera": "Olympus Pen EE-3",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "0059_27.jpg",
+    "meta": {
+      "path": "static/images/0059_27.jpg",
+      "birthtime": "2024-10-22T05:17:25.841Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Farmer's lane",
+      "altText": "A dirt road goes off into the distance between fields and two trees.",
+      "story": "We stayed on a farm for a few more days in the west of German, close to the border with Belgium. It was a great change of pace after a busy week in Berlin.",
+      "year": 2023,
+      "month": 3,
+      "collection": "Germany",
+      "location": "Dohm-Lammersdorf",
+      "camera": "Olympus Pen EE-3",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "0063_29.jpg",
+    "meta": {
+      "path": "static/images/0063_29.jpg",
+      "birthtime": "2024-10-22T05:17:25.845Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Cochem Castle",
+      "altText": "An old, stone castle sits atop a tree covered hill.",
+      "story": "We spent a day in and around the old castle town of Cochem,  which sits above the Moselle River. The area was stunning, with old lanes and buildings leading up and and down the hills alongside the river valley.",
+      "year": 2023,
+      "month": 3,
+      "collection": "Germany",
+      "location": "Cochem",
+      "camera": "Olympus Pen EE-3",
+      "film": "Fujifilm Fujicolor 200"
+    }
   }
 ]
