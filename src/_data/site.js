@@ -3,11 +3,11 @@ import { config } from "../utils/image.config.js";
 const { group, groupBy } = config;
 
 const site = {
-    title: "Film",
+    title: "Film by Fershad",
     tagline: "Photos by Fershad Irani",
-    description: "A description of my site",
+    description: "A collection of film photographs by Fershad Irani",
     lang: "en",
-    baseUrl: environment === "serve" ? "http://localhost:8080" : "https://example.com",
+    baseUrl: environment === "serve" ? "http://localhost:8080" : "https://film.fershad.com",
     gallery: {
         group,
         groupBy,
