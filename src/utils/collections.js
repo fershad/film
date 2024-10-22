@@ -7,5 +7,5 @@ export const collections = [
   "Japan",
   "Singapore",
   "India",
-  "Touch World Cup"
+  "2024 Touch World Cup"
 ];
