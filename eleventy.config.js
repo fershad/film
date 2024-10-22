@@ -28,7 +28,7 @@ export default async function(eleventyConfig) {
 		// Add any other Image utility options here:
 
 		// optional, output image formats
-		formats: ["webp", "jpeg", "avif"],
+		formats: ["webp", "jpeg"],
 		// formats: ["auto"],
 
 		// optional, output image widths
