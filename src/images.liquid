@@ -13,12 +13,13 @@ eleventyComputed:
   description: "{{image.metadata.story}}"
   path: "{{image.meta.path}}"
   alt: "{{image.metadata.altText}}"
+  collection: "{{image.metadata.collection}}"
 ---
-
-{% if image.metadata.collection AND image.metadata.location %}
+{% assign hasLocation = image.metadata.location | size %}
+{% if image.metadata.collection and hasLocation > 0 %}
   <div class="location"><small><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" /></svg><span>{{ image.metadata.location }}, {{ image.metadata.collection }}</span></small></div>
-{% elsif image.metadata.collection %}
-  <div><small>{{ image.metadata.collection }}</small></div>
+{% elsif image.metadata.collection AND hasLocation == 0 %}
+  <div class="location"><small><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-stack"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6l-8 4l8 4l8 -4l-8 -4" /><path d="M4 14l8 4l8 -4" /></svg> <span>{{ image.metadata.collection }}</span></small></div>
 {% endif %}
 <h1>{{ image.metadata.title }}</h1>
 <aside>
