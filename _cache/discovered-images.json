@@ -2419,7 +2419,7 @@
       "birthtime": "2024-10-22T08:26:39.226Z"
     },
     "metadata": {
-      "portrait": true,
+      "portrait": false,
       "title": "Wind in motion",
       "altText": "A shot taken from a moving train, high grass blurred in the foreground with a white wind turbine sitting in a field behind.",
       "story": "I'm pretty sure this was taken on the train while leaving Germany heading back to Holland. I can't remember where exactly it was, but I'll say it was somewhere around Dusseldorf.",
@@ -2524,6 +2524,215 @@
       "location": "Berlin",
       "camera": "Olympus Pen EE-3",
       "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "002273230073.jpg",
+    "meta": {
+      "path": "static/images/002273230073.jpg",
+      "birthtime": "2024-10-22T09:29:47.689Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Taxi stop",
+      "altText": "A line of yellow taxis sit beneath an overpass. Sun shines through a separation in the road above.",
+      "story": "This spot is near my current home in Taipei, and always has something happening. It's a resting spot for taxi drivers, and often you'll find them in groups playing mahjong while their cars get serviced.",
+      "year": "2024",
+      "month": 9,
+      "collection": "Taiwan",
+      "location": "Taipei",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "002273230070.jpg",
+    "meta": {
+      "path": "static/images/002273230070.jpg",
+      "birthtime": "2024-10-22T09:29:47.696Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Garage entrance",
+      "altText": "A pale yellow wall frames the dark entrance to an underground garage. Chinese characters above indicate what it is.",
+      "story": "The apartments around where I live have underground parking lots that extend the length of the street they're on. None of them are as asthetically pleasing as this one though.",
+      "year": "2024",
+      "month": 9,
+      "collection": "Taiwan",
+      "location": "Taipei",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "002273210072.jpg",
+    "meta": {
+      "path": "static/images/002273210072.jpg",
+      "birthtime": "2024-10-22T09:29:47.701Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Tropical island vibes",
+      "altText": "Palm trees blow in the wind against a blue sky.",
+      "story": "Taipei doesn't have much greenery, but when it does it likes to give off that tropical island vibe.",
+      "year": "2024",
+      "month": 9,
+      "collection": "Taiwan",
+      "location": "Taipei",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "002273210070 (1).jpg",
+    "meta": {
+      "path": "static/images/002273210070 (1).jpg",
+      "birthtime": "2024-10-22T09:29:47.706Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "You Bike?",
+      "altText": "Public rental bikes lined up in a row at a docking station. Their yellow tyre covers stand out against the dull concrete footpath.",
+      "story": "Public bike rental stations are dotted throughout urban areas in Taiwan, and can provide a great way to get around.",
+      "year": "2024",
+      "month": 9,
+      "collection": "Taiwan",
+      "location": "Taipei",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "002273210011.jpg",
+    "meta": {
+      "path": "static/images/002273210011.jpg",
+      "birthtime": "2024-10-22T09:29:47.714Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Keeping cool",
+      "altText": "An airconditioning unit sit on the roadside attached to a grey wall. Blue grafitti is painted above the box, while green leafy ferns sit on the road to the right. On its left is a street post topped with a security camera pointing away from the box.",
+      "story": "Asthetically pleasing airconditioning unit.",
+      "year": "2024",
+      "month": 9,
+      "collection": "Taiwan",
+      "location": "Taipei",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "002273210004.jpg",
+    "meta": {
+      "path": "static/images/002273210004.jpg",
+      "birthtime": "2024-10-22T09:29:47.718Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Old and the new.",
+      "altText": "A new high-rise apartment building is juxtaposed between two older low-rise residential apartments.",
+      "story": "In Taipei you'll increasingly find juxtapositions like this one. As the city develops, old neighbourhoods are being replaced by tall glass high-rises. These often find themselves closely surrounded by other older buildings that have withstood the relentless march of urban renewal.",
+      "year": "2024",
+      "month": 9,
+      "collection": "Taiwan",
+      "location": "Taipei",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "002273210012.jpg",
+    "meta": {
+      "path": "static/images/002273210012.jpg",
+      "birthtime": "2024-10-22T09:29:47.722Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Top floor trees",
+      "altText": "Trees stick out from the top corner apartments of an old, grey apartment building. They contrast the blue sky in the background.",
+      "story": "A bit of green brightens up this otherwise dull grey building in Taipei. Not sure how safe this is during a typhoon though.",
+      "year": "2024",
+      "month": 9,
+      "collection": "Taiwan",
+      "location": "Taipei",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "002273210043 (1).jpg",
+    "meta": {
+      "path": "static/images/002273210043 (1).jpg",
+      "birthtime": "2024-10-22T09:29:47.729Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "YouBikes at Exit 3",
+      "altText": "A row of public rental bikes stand at docks along the wall of a metro exit. The exit sign is number '3'.",
+      "story": "A metro exit in a residential area of Taipei with public rental bikes right outside.",
+      "year": "2024",
+      "month": 9,
+      "collection": "Taiwan",
+      "location": "Taipei",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "002273210018.jpg",
+    "meta": {
+      "path": "static/images/002273210018.jpg",
+      "birthtime": "2024-10-22T09:29:47.733Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "5 secs",
+      "altText": "Scooters waiting at a red light with 5 seconds showing on the countdown. They are ready to go under an overpass.",
+      "story": "",
+      "year": "2024",
+      "month": 9,
+      "collection": "Taiwan",
+      "location": "Taipei",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "002273210020.jpg",
+    "meta": {
+      "path": "static/images/002273210020.jpg",
+      "birthtime": "2024-10-22T09:29:47.738Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Xinyi 101",
+      "altText": "A tall green glass tower stands in the backroung. A street sign pointing towards it reads 'Xinyi Rd Sect. 4'. Multiple other signs are stuck to the same street post.",
+      "story": "Taipei 101 is a pretty impressive work of engineering. Just search for video of it during a typhoon or earthquake.",
+      "year": "2024",
+      "month": 9,
+      "collection": "Taiwan",
+      "location": "Taipei",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "002273210024.jpg",
+    "meta": {
+      "path": "static/images/002273210024.jpg",
+      "birthtime": "2024-10-22T09:29:47.744Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "MRT Shilin Station",
+      "altText": "A metro train is stopped at the train station under a supporting cable. The station hoardings are marked with a red line.",
+      "story": "Most folks get off at Shilin Station because they're heading to the night market, but for some of us it's the place to alight for Touch Footy.",
+      "year": "2024",
+      "month": 9,
+      "collection": "Taiwan",
+      "location": "Taipei",
+      "camera": "Olympus Pen EE-3",
+      "film": "Kodak Portra 400"
     }
   }
 ]
