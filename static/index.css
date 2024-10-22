@@ -1226,6 +1226,10 @@ article a {
   background: var(--sand-2);
 }
 
+.tiny-text {
+  font-size: var(--font-size-00);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--stone-10);
