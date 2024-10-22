@@ -1230,6 +1230,11 @@ article a {
   font-size: var(--font-size-00);
 }
 
+nav > ul + ul,
+nav > ul + ul > li:first-of-type {
+  margin-block-start: var(--size-1);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--stone-10);
