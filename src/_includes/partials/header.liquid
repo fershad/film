@@ -8,13 +8,12 @@
                 <ul>
                     <li>
                         {% assign group = site.gallery.group %}
-                        {% if group %}
+                        {% if group and pageType == 'image' %}
                             {% assign groupByField = site.gallery.groupBy %}
                             <a href="/#{{site.gallery.groupBy |  downcase }}-{{ groupingName |  downcase }}">&larr; {{ backLinkWording }}</a>
-                        {% else %}                            
+                        {% else %}
                         <a href="/">&larr; Back to gallery</a>
                         {% endif %}
-
                     </li>
                 </ul>
             </nav>
