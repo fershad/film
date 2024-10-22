@@ -2553,7 +2553,7 @@
     },
     "metadata": {
       "portrait": true,
-      "title": "Garage entrance",
+      "title": "Garage exit",
       "altText": "A pale yellow wall frames the dark entrance to an underground garage. Chinese characters above indicate what it is.",
       "story": "The apartments around where I live have underground parking lots that extend the length of the street they're on. None of them are as asthetically pleasing as this one though.",
       "year": "2024",
@@ -2733,6 +2733,25 @@
       "location": "Taipei",
       "camera": "Olympus Pen EE-3",
       "film": "Kodak Portra 400"
+    }
+  },
+  {
+    "file": "0002_00A.jpg",
+    "meta": {
+      "path": "static/images/0002_00A.jpg",
+      "birthtime": "2024-10-22T09:52:06.304Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Balconies and blue skies",
+      "altText": "A photo looking up at the blue sky, with the upper floor balaconies of an apartment building visible in the lower half of the shot. ",
+      "story": "On sunny days, I like to look at the sunset casting its light on the balconies along our street. On rainy days, I like to watch as temporary waterfalls are created, cascading off them.",
+      "year": "2023",
+      "month": 3,
+      "collection": "Taiwan",
+      "location": "Taipei",
+      "camera": "Olympus Pen EE-3",
+      "film": "Fujifilm Fujicolor 200"
     }
   }
 ]
