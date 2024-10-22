@@ -50,10 +50,11 @@ const readFiles = async () => {
  */
 const getImages = async () => {
     let limit = undefined;
-    console.log(process.argv);
     if (process.argv[2]) {
         limit = Number(process.argv[2]);
         console.log(`Limit set to ${limit}.`);
+    } else {
+        console.log("No limit set.");
     }
 
     const discoveredImagesFile = await fs.readFile(path.resolve(__dirname, "../../_cache/discovered-images.json"), "utf-8").catch(() => null);

@@ -14,6 +14,4 @@ const site = {
     },
 };
 
-console.log(site)
-
 export default site;
