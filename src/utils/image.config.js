@@ -1,3 +1,6 @@
+import { collections } from "./collections.js";
+
+
 export const config = {
   // Sort order for the images
   sort: "asc", // "asc" or "desc"
@@ -40,16 +43,7 @@ export const config = {
       name: "collection",
       type: "list",
       message: "Enter the image collection:",
-      choices: [
-        "Norway",
-        "Denmark",
-        "England",
-        "Germany",
-        "Taiwan",
-        "Japan",
-        "Singapore",
-        "India",
-      ],
+      choices: collections,
     },
     location: {
       name: "location",

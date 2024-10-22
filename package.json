@@ -5,7 +5,8 @@
   "scripts": {
     "start": "rm -rf _site && eleventy --serve",
     "build": "eleventy",
-    "pokeball": "node src/utils/processImages.js"
+    "pokeball": "node src/utils/processImages.js",
+    "add-collection": "node src/utils/updateCollections.js"
   },
   "keywords": [],
   "author": "",
