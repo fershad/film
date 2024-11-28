@@ -67,6 +67,7 @@ export const config = {
       choices: [
         "Kodak Portra 400",
         "Fujifilm Fujicolor 200",
+        "Fujifilm Fujicolor 100",
       ],
     },
   },
