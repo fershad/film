@@ -1,7 +1,7 @@
 ---json
 {
     "permalink": "all.json",
-    "eleventyExcludeFromCollections": true,
+    "eleventyExcludeFromCollections": true
 }
 ---
 {
@@ -13,6 +13,7 @@
       "url": "{{ absolutePostUrl }}",
       "date": "{{ image.date | dateToRfc3339 }}",
       "path": "{{ image.data.path }}",
+      "imageUrl" : "https://film.fershad.com/{{ image.data.path }}",
       "altText": "{{ image.data.altText }}",
       "description": "{{ image.data.description }}"
     }{%- if not loop.last -%},{%- endif -%}
