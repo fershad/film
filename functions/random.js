@@ -4,8 +4,9 @@ export async function onRequestGet(context) {
     const random = all.images[Math.floor(Math.random() * all.images.length)];
 
     const randomUrl = random.url;
+    console.log(randomUrl);
 
-    const randomPage = context.env.ASSETS.fetch(randomUrl);
+    const randomPage = await fetch(randomUrl);
 
     return new Response(randomPage.body, randomPage);
   }

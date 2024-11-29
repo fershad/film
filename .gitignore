@@ -10,6 +10,7 @@ yarn-error.log*
 
 # Build output
 _site/
+.wrangler
 
 # Temporary files
 *.tmp
