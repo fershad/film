@@ -1,0 +1,21 @@
+---json
+{
+    "permalink": "all.json",
+    "eleventyExcludeFromCollections": true,
+}
+---
+{
+  "images": [
+    {%- for image in collections.images | reverse -%}
+    {%- set absolutePostUrl %}{{ image.url | htmlBaseUrl(metadata.base) }}{% endset %}
+    {
+      "title": "{{ image.data.imageTitle }}",
+      "url": "{{ absolutePostUrl }}",
+      "date": "{{ image.date | dateToRfc3339 }}",
+      "path": "{{ image.data.path }}",
+      "altText": "{{ image.data.altText }}",
+      "description": "{{ image.data.description }}"
+    }{%- if not loop.last -%},{%- endif -%}
+    {%- endfor -%}
+  ]
+}
