@@ -1202,6 +1202,11 @@ footer p {
 
 #gallery-holder nav ul li {
   display: block;
+  border-left: 1px solid var(--stone-4);
+}
+
+#gallery-holder nav ul li:hover {
+  background-color: var(--stone-2);
 }
 
 #gallery-holder nav ul li a {
