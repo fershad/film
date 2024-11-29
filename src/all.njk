@@ -7,7 +7,7 @@
 {
   "images": [
     {%- for image in collections.images | reverse -%}
-    {%- set absolutePostUrl %}{{ image.url | htmlBaseUrl(metadata.base) }}{% endset %}
+    {%- set absolutePostUrl %}{{ image.url | htmlBaseUrl("https://film.fershad.com") }}{% endset %}
     {
       "title": "{{ image.data.imageTitle }}",
       "url": "{{ absolutePostUrl }}",
