@@ -34,6 +34,8 @@ export default async function(eleventyConfig) {
 		// optional, output image widths
 		widths: ["auto", 400, 800, 1600, 2200],
 
+		useCache: true,
+
 		// optional, attributes assigned on <img> override these values.
 		defaultAttributes: {
 			loading: "lazy",
