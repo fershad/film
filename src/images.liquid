@@ -17,6 +17,7 @@ eleventyComputed:
   backLinkWording: "Back to {{ site.gallery.groupBy |  downcase}}"
   groupingName: "{{image.metadata.collection}}"
   shortDate: "{{image.metadata.year}}-{{image.metadata.month}}"
+  portrait: "{{image.metadata.portrait}}"
 ---
 {% assign hasLocation = image.metadata.location | size %}
 {% if image.metadata.collection and hasLocation > 0 %}
