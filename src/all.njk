@@ -15,7 +15,9 @@
       "path": "{{ image.data.path }}",
       "imageUrl" : "https://film.fershad.com/{{ image.data.path }}",
       "altText": "{{ image.data.alt }}",
-      "description": "{{ image.data.description }}"
+      "description": "{{ image.data.description }}",
+      "collection": "{{ image.data.collection }}",
+      "shortDate": "{{ image.data.shortDate }}",
     }{%- if not loop.last -%},{%- endif -%}
     {%- endfor -%}
   ]
