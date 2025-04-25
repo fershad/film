@@ -3475,5 +3475,157 @@
       "camera": "Olympus Pen EE-3",
       "film": "Fujifilm Fujicolor 100"
     }
+  },
+  {
+    "file": "004713720003.jpg",
+    "meta": {
+      "path": "static/images/004713720003.jpg",
+      "birthtime": "2025-04-25T07:55:50.456Z"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Tracks and trees",
+      "altText": "The foreground of the picture is dominated by a train station platform and train line next to it under a bridge. The bridge is covered with a large tree, and more greenery lines the side of the tracks. The sky above is clear and blue.",
+      "story": "Getting around Sydney by train means a lot of waiting around and hoping that there's not a cancellation.",
+      "year": "2025",
+      "month": 3,
+      "collection": "Australia",
+      "location": "Sydney",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "004713720010.jpg",
+    "meta": {
+      "path": "static/images/004713720010.jpg",
+      "birthtime": "2025-04-25T07:55:50.468Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "New and old UTS",
+      "altText": "An old industrial building is on the right of the shot, alongside a garden walkway. In the background is a newly designed university building on the left, with an older building to the right of it.",
+      "story": "UTS has changed a lot since I was studying there in 2008, but that old, ugly looking main building will always stay the same.",
+      "year": "2025",
+      "month": 3,
+      "collection": "Australia",
+      "location": "Sydney",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "004713720015.jpg",
+    "meta": {
+      "path": "static/images/004713720015.jpg",
+      "birthtime": "2025-04-25T07:55:50.481Z"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Cricket outside the SCG",
+      "altText": "Kids playing cricket in a large open field, with blue skies above. Two large stadiums dominate the background of the shot.",
+      "story": "I was running late for the Swans game, but stopped off to watch this kids games for a few balls.",
+      "year": "2025",
+      "month": 3,
+      "collection": "Australia",
+      "location": "Sydney",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "004713720021.jpg",
+    "meta": {
+      "path": "static/images/004713720021.jpg",
+      "birthtime": "2025-04-25T07:55:50.489Z"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Cheer, cheer the red and the white",
+      "altText": "A wide shot of the Sydney Cricket Ground during a match, with spectators filling the stands and players on the green field. The city skyline is visible in the background.",
+      "story": "Since leaving Sydney in 2012, I've not had the chance to be in town when the Swans were playing. I was stoked that this year I could get to the opening two rounds.",
+      "year": "2025",
+      "month": 3,
+      "collection": "Australia",
+      "location": "Sydney",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "004713720029.jpg",
+    "meta": {
+      "path": "static/images/004713720029.jpg",
+      "birthtime": "2025-04-25T07:55:50.497Z"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Blustery in the 'burbs",
+      "altText": "A palm tree blows in the strong breeze on a street corner. A white  old house is on the left of the frame, while a man crosses the road near the right of the shot.",
+      "story": "We had some really good weather for the most part on this trip to Sydney, but towards the end the wind really picked up for a few days.",
+      "year": "2025",
+      "month": 3,
+      "collection": "Australia",
+      "location": "Sydney",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "004713720033.jpg",
+    "meta": {
+      "path": "static/images/004713720033.jpg",
+      "birthtime": "2025-04-25T07:55:50.505Z"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Pigeon on Agar Steps",
+      "altText": "A pigeon sits on a ledge alongside a building. ",
+      "story": "This fella was just chilling next to the entrance of a sandwich shop waiting to get some crumbs.",
+      "year": "2025",
+      "month": 3,
+      "collection": "Australia",
+      "location": "Sydney",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "004713720034.jpg",
+    "meta": {
+      "path": "static/images/004713720034.jpg",
+      "birthtime": "2025-04-25T07:55:50.516Z"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Outlook at the lookout",
+      "altText": "A female wearing hiking clothes has her back to the camera. She is looking out over green trees that extend out over hills in the background.",
+      "story": "We spent a nice few days in Wentworth Falls taking in the serenity of the Blue Mountains.",
+      "year": "2025",
+      "month": 3,
+      "collection": "Australia",
+      "location": "Sydney",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "004713720036.jpg",
+    "meta": {
+      "path": "static/images/004713720036.jpg",
+      "birthtime": "2025-04-25T07:55:50.523Z"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Three sisters",
+      "altText": "The Three Sisters rock formation stands in the foreground, illuminated by soft light of the setting sun against a backdrop of a vast, hazy mountain range under a partly cloudy sky.",
+      "story": "We got the the Blue Mountains in the early afternoon, and were lucky enough to get to the Three Sisters in time to enjoy a beautiful sunset.",
+      "year": "2025",
+      "month": 3,
+      "collection": "Australia",
+      "location": "Sydney",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 200"
+    }
   }
 ]

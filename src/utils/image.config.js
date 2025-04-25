@@ -58,6 +58,8 @@ export const config = {
       message: "Enter the camera used:",
       choices: [
         "Olympus Pen EE-3",
+        "Canon AV-1",
+        "Konica C35",
       ]
     },
     film: {
@@ -68,6 +70,7 @@ export const config = {
         "Kodak Portra 400",
         "Fujifilm Fujicolor 200",
         "Fujifilm Fujicolor 100",
+        "Kodak Color 200",
       ],
     },
   },
