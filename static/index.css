@@ -1254,8 +1254,25 @@ nav > ul + ul > li:first-of-type {
     width: 100%;
     font-size: var(--font-size-0);
     padding: var(--size-2);
-    background-color: var(--sand-0);
+    background-color: var(--sand-2);
     text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.featured:hover span,
+.featured:focus span {
+    opacity: 0;
+}
+
+@media (max-width: 1379px) {
+    .featured {
+        grid-column: initial;
+        grid-row: initial;
+    }
+
+    .featured span {
+        display: none;
+    }
 }
 
 @media (prefers-color-scheme: dark) {

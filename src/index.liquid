@@ -10,12 +10,13 @@ pageType: gallery
     {% assign galleryImages = images %}
     <section id="gallery">
     {% if group %}
-    {% assign galleryImages = images | group_by: groupBy %}
+      {% assign galleryImages = images | group_by: groupBy %}
         {% for grouping in galleryImages %}
             <div id="{{ groupByField }}-{{ grouping.name | downcase }}" class="group-name">
                 <h2>{{ grouping.name }}</h2>
             </div>
-            {% for image in grouping.items %}
+            {% assign groupedImages = grouping.items | set_featured %}
+            {% for image in groupedImages %}
                 <a href="/image/{{ image.file | slugify }}"
                 {% if image.featured %}
                     class="featured"
@@ -28,6 +29,7 @@ pageType: gallery
             {% endfor %}
         {% endfor %}
         {% else %}
+        {% assign groupedImages = galleryImages %}
         {% for image in galleryImages %}
             <a href="/image/{{ image.file | slugify }}"
                 {% if image.featured %}
