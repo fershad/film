@@ -11,7 +11,7 @@ permalink: "image/{{ image.file | slugify }}/"
 eleventyComputed:
   imageTitle: "{{ image.metadata.title  }}"
   description: "{{image.metadata.story}}"
-  path: "{{image.meta.path}}"
+  path: "{{image.meta.url}}"
   alt: "{{image.metadata.altText}}"
   collection: "{{image.metadata.collection}}"
   backLinkWording: "Back to {{ site.gallery.groupBy |  downcase}}"
