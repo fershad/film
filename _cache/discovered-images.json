@@ -3938,5 +3938,25 @@
       "camera": "Konica C35",
       "film": "Fujifilm Fujicolor 200"
     }
+  },
+  {
+    "file": "0017_21.jpg",
+    "meta": {
+      "path": "static/images/0017_21.jpg",
+      "birthtime": "2025-08-17T04:19:15.267Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1755404462/0017_21.jpg"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "cat.jpeg",
+      "altText": "A cat sits comfortably on a outdoor chair on a balcony. Plants line the outside of the balcony, while an air conditioning unit is above the chair the cat is sitting on.",
+      "story": "This cat has a good life.",
+      "year": "2025",
+      "month": 3,
+      "collection": "Taiwan",
+      "location": "Taipei",
+      "camera": "Konica C35",
+      "film": "Fujifilm Fujicolor 200"
+    }
   }
 ]

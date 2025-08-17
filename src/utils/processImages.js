@@ -125,6 +125,7 @@ export const getImages = async () => {
         break;
       }
     } else {
+      images[i].meta = found.meta;
       images[i].metadata = found.metadata;
     }
   }
