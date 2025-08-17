@@ -50,16 +50,16 @@ eleventyComputed:
 <div class="image-holder" data-orientation="{{ orientation }}">
   <section id="main-image">
     <p>{{ image.metadata.story }}</p>
-    <img src="{{ image.meta.url }}" alt="{{ image.metadata.altText }}" eleventy:widths="800,1600,2200" sizes="100vw" loading="eager" decoding="async" >
+    <img loading="eager" decoding="async" src="{{ image.meta.url | cloudinarySource }}" alt="{{ image.metadata.altText }}" width="2075" height="1463" sizes="100vw">
   </section>
   <nav role="image-navigation" class="image-nav">
     <ol>
       <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><span>
-        <img src="{{ pagination.page.previous.meta.url }}" alt="Previous image" height="110" width="190" sizes="30vw">
+        <img loading="lazy" decoding="async" src="{{ pagination.page.previous.meta.url | cloudinarySource }}" alt="Previous image" height="130" width="230" srcset="{{ pagination.page.previous.meta.url | cloudinarySrcset }}" sizes="30vw">
         <p>Previous</p>
       </span></a>{% endif %}</li>
       <li><span>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">
-        <img src="{{ pagination.page.next.meta.url }}" alt="Next image"  height="110" width="190" sizes="30vw">
+        <img loading="lazy" decoding="async" src="{{ pagination.page.next.meta.url | cloudinarySource }}" alt="Next image" height="130" width="230" srcset="{{ pagination.page.next.meta.url | cloudinarySrcset }}" sizes="30vw">
         <p>Next</p>
       </a></span>{% endif %}</li>
     </ol>

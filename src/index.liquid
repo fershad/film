@@ -21,7 +21,9 @@ pageType: gallery
                 {% if image.featured %}
                     class="featured"
                 {% endif %}
-                ><img src="{{  image.meta.url }}" alt="{{ image.metadata.altText }}" sizes="40vw" height="400" width="400">
+                >
+                    <img loading="lazy" decoding="async" src="{{  image.meta.url | cloudinarySource }}" alt="{{ image.metadata.altText }}" height="400" width="400"
+                        srcset="{{ image.meta.url | cloudinarySrcset }}" sizes="40vw">
                     {% if image.featured %}
                     <span>{% if image.metadata.location.size > 0 %}{{ image.metadata.location }} | {%endif %}{{ image.metadata.camera }} | {{ image.metadata.film }}</span>
                     {% endif %}
@@ -35,7 +37,9 @@ pageType: gallery
                 {% if image.featured %}
                     class="featured"
                 {% endif %}
-            ><img src="{{ image.meta.url }}" alt="{{ image.metadata.altText }}" sizes="40vw" height="400" width="400">
+            >
+                <img loading="lazy" decoding="async" src="{{  image.meta.url | cloudinarySource }}" alt="{{ image.metadata.altText }}" height="400" width="400"
+                    srcset="{{ image.meta.url | cloudinarySrcset }}" sizes="40vw">
                 {% if image.featured %}
                 <span>{% if image.metadata.location.size > 0 %}{{ image.metadata.location }} | {%endif %}{{ image.metadata.camera }} | {{ image.metadata.film }}</span>
                 {% endif %}

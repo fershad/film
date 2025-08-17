@@ -19,26 +19,48 @@ export default async function (eleventyConfig) {
 	</style>`;
   });
 
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    // which file extensions to process
-    extensions: "html",
+  // eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+  //   // which file extensions to process
+  //   extensions: "html",
 
-    // Add any other Image utility options here:
+  //   // Add any other Image utility options here:
 
-    // optional, output image formats
-    formats: ["webp", "jpeg"],
-    // formats: ["auto"],
+  //   // optional, output image formats
+  //   formats: ["webp", "jpeg"],
+  //   // formats: ["auto"],
 
-    // optional, output image widths
-    widths: ["auto", 400, 800, 1600, 2200],
+  //   // optional, output image widths
+  //   widths: ["auto", 400, 800, 1600, 2200],
 
-    useCache: true,
+  //   useCache: true,
 
-    // optional, attributes assigned on <img> override these values.
-    defaultAttributes: {
-      loading: "lazy",
-      decoding: "async",
-    },
+  //   // optional, attributes assigned on <img> override these values.
+  //   defaultAttributes: {
+  //     loading: "lazy",
+  //     decoding: "async",
+  //   },
+  // });
+  //
+  eleventyConfig.addFilter("cloudinarySource", (url) => {
+    // Find the "upload/" string and add "f_auto,q_auto" to that
+    const cloudinaryUrl = url.replace("upload/", "upload/f_auto/q_auto/");
+    return cloudinaryUrl;
+  });
+
+  eleventyConfig.addFilter("cloudinarySrcset", (url) => {
+    const w400 = url.replace("upload/", "upload/f_auto/q_auto/c_scale,w_400/");
+    const w800 = url.replace("upload/", "upload/f_auto/q_auto/c_scale,w_800/");
+    const w1600 = url.replace(
+      "upload/",
+      "upload/f_auto/q_auto/c_scale,w_1600/",
+    );
+    const w2075 = url.replace(
+      "upload/",
+      "upload/f_auto/q_auto/c_scale,w_2075/",
+    );
+
+    const srcset = `${w400} 400w, ${w800} 800w, ${w1600} 1600w, ${w2075} 2075w`;
+    return srcset;
   });
 
   eleventyConfig.addFilter("prettyJson", (value = "") => {
