@@ -55,11 +55,11 @@ eleventyComputed:
   <nav role="image-navigation" class="image-nav">
     <ol>
       <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><span>
-        <img src="{{ pagination.page.previous.url }}" alt="Previous image" height="110" width="190" sizes="30vw">
+        <img src="{{ pagination.page.previous.meta.url }}" alt="Previous image" height="110" width="190" sizes="30vw">
         <p>Previous</p>
       </span></a>{% endif %}</li>
       <li><span>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">
-        <img src="{{ pagination.page.next.url }}" alt="Next image"  height="110" width="190" sizes="30vw">
+        <img src="{{ pagination.page.next.meta.url }}" alt="Next image"  height="110" width="190" sizes="30vw">
         <p>Next</p>
       </a></span>{% endif %}</li>
     </ol>
