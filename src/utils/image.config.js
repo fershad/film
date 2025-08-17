@@ -22,7 +22,8 @@ export const config = {
     altText: {
       name: "altText",
       type: "input",
-      message: "Describe the content of the image (used for alt text on website):",
+      message:
+        "Describe the content of the image (used for alt text on website):",
     },
     story: {
       name: "story",
@@ -39,7 +40,7 @@ export const config = {
       name: "month",
       type: "list",
       message: "Enter the image month (MM e.g 08):",
-      choices: months
+      choices: months,
     },
     collection: {
       name: "collection",
@@ -60,7 +61,8 @@ export const config = {
         "Olympus Pen EE-3",
         "Canon AV-1",
         "Konica C35",
-      ]
+        "Minolta Zoom 70",
+      ],
     },
     film: {
       name: "film",
@@ -71,6 +73,10 @@ export const config = {
         "Fujifilm Fujicolor 200",
         "Fujifilm Fujicolor 100",
         "Kodak Color 200",
+        "Kodak Ultramax 400",
+        "Ilford XP2 400",
+        "Ilford HP5 Plus 400",
+        "Kentmere Pan 400",
       ],
     },
   },
