@@ -21,6 +21,8 @@ pageType: gallery
                 {% if image.featured %}
                     class="featured"
                 {% endif %}
+
+                data-new={{  image.meta.birthtime | isNew }}
                 >
                     <img loading="lazy" decoding="async" src="{{  image.meta.url | cloudinarySource }}" alt="{{ image.metadata.altText }}" height="400" width="400"
                         srcset="{{ image.meta.url | cloudinarySrcset }}" sizes="40vw">
@@ -37,6 +39,8 @@ pageType: gallery
                 {% if image.featured %}
                     class="featured"
                 {% endif %}
+
+                data-new={{  image.meta.birthtime | isNew }}
             >
                 <img loading="lazy" decoding="async" src="{{  image.meta.url | cloudinarySource }}" alt="{{ image.metadata.altText }}" height="400" width="400"
                     srcset="{{ image.meta.url | cloudinarySrcset }}" sizes="40vw">

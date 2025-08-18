@@ -84,5 +84,22 @@ export default async function (eleventyConfig) {
     return images;
   });
 
+  eleventyConfig.addFilter("isNew", (birthtime) => {
+    // Parse the date string
+    const date = new Date(birthtime);
+
+    // Get current time
+    const currentTime = new Date();
+
+    // Calculate the difference in milliseconds
+    const differenceInMs = currentTime - date;
+
+    // Convert milliseconds to days
+    const differenceInDays = differenceInMs / (1000 * 60 * 60 * 24);
+
+    // Check if the date is within the specified days
+    return differenceInDays <= 45 ? "new" : "";
+  });
+
   eleventyConfig.addPlugin(pluginRss);
 }
