@@ -1288,6 +1288,29 @@ a[data-new="new"]:before {
     box-shadow: var(--sand-10) -2px 2px 1px;
 }
 
+li:has([data-has-new="true"]) {
+    position: relative;
+}
+
+li:has([data-has-new="true"])::before {
+    content: "";
+    position: absolute;
+    width: 0.8ch;
+    height: 0.8ch;
+    border-radius: 50%;
+    background-color: var(--sand-2);
+    z-index: 99;
+    left: -0.4ch;
+    top: 3px;
+    /*transform: translateY(-50%);*/
+    box-shadow: var(--sand-10) 1px 1px 4px;
+    transition: box-shadow 0.2s ease-out;
+}
+
+li:has([data-has-new="true"]):hover:before {
+    box-shadow: none;
+}
+
 @media (max-width: 1379px) {
     .featured {
         grid-column: initial;

@@ -101,5 +101,26 @@ export default async function (eleventyConfig) {
     return differenceInDays <= 45 ? "new" : "";
   });
 
+  eleventyConfig.addFilter("groupingHasNew", (grouping, images) => {
+    const newImages = images.filter((image) => {
+      // Parse the date string
+      const date = new Date(image.meta.birthtime);
+
+      // Get current time
+      const currentTime = new Date();
+
+      // Calculate the difference in milliseconds
+      const differenceInMs = currentTime - date;
+
+      // Convert milliseconds to days
+      const differenceInDays = differenceInMs / (1000 * 60 * 60 * 24);
+
+      // Check if the date is within the specified days
+      return differenceInDays <= 45;
+    });
+
+    return newImages.length > 0;
+  });
+
   eleventyConfig.addPlugin(pluginRss);
 }

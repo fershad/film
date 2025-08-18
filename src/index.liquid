@@ -55,7 +55,10 @@ pageType: gallery
         <ul>
             {% for grouping in galleryImages %}
                 <li>
-                        <a href="#{{ groupByField}}-{{ grouping.name | downcase }}">
+                        <a
+                            href="#{{ groupByField}}-{{ grouping.name | downcase }}"
+                            data-has-new={{ grouping.name | downcase | groupingHasNew: grouping.items }}
+                        >
                         {{ grouping.name }}
                         </a>
                         </li>
