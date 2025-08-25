@@ -4318,5 +4318,245 @@
       "camera": "Canon AV-1",
       "film": "Ilford XP2 400"
     }
+  },
+  {
+    "file": "0020_17.jpg",
+    "meta": {
+      "path": "static/images/0020_17.jpg",
+      "birthtime": "2025-08-25T13:12:15.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1756127852/0020_17.jpg"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Finding shade",
+      "altText": "Looking up a grassy hill with a blue sky in the background. Two trees are just over the top of the hill, and two bulls can be seen sitting under one of the trees.",
+      "story": "Visiting Lucerne during a Summer heatwave, I found some shade near the old city walls. Looks like it was a popular spot to stop for a rest.",
+      "year": "2025",
+      "month": 6,
+      "collection": "Switzerland",
+      "location": "Lucerne",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 100"
+    }
+  },
+  {
+    "file": "0003_0.jpg",
+    "meta": {
+      "path": "static/images/0003_0.jpg",
+      "birthtime": "2025-08-25T13:12:16.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1756128253/0003_0.jpg"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Ducks on the lake at sunset",
+      "altText": "A lake scene at sunset. The sky is a wide range of light orange hues. The lake is blue with some orange tips, and some small ducks are playing on the surface.",
+      "story": "A pleasant Summer afternoon by the lake in Zurich. With a heatwave rolling in, it felt like the whole city was out there that afternoon.",
+      "year": "2025",
+      "month": 6,
+      "collection": "Switzerland",
+      "location": "Zurich",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 100"
+    }
+  },
+  {
+    "file": "0006_3.jpg",
+    "meta": {
+      "path": "static/images/0006_3.jpg",
+      "birthtime": "2025-08-25T13:12:16.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1756128409/0006_3.jpg"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Boats and folks at sunset",
+      "altText": "Photo of an orange sky and orange lit lake at sunset. Silhouettes of people sitting on the lake shore are in the foreground, with silhouetted boats on the lake, and a city skyline in the distance.",
+      "story": "Absolute banger of a shot looking back at Zurich city from across the lake at sunset.",
+      "year": "2025",
+      "month": 6,
+      "collection": "Switzerland",
+      "location": "Zurich",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 100"
+    }
+  },
+  {
+    "file": "0008_5.jpg",
+    "meta": {
+      "path": "static/images/0008_5.jpg",
+      "birthtime": "2025-08-25T13:12:16.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1756128569/0008_5.jpg"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Blurred lines",
+      "altText": "A blurry image looking down a road towards a sunset sky. Car lights and street lights are blurred lines across the shot.",
+      "story": "A quick snap while crossing the road in Zurich, trying to avoid trams, bikes, and cars.",
+      "year": "2025",
+      "month": 6,
+      "collection": "Switzerland",
+      "location": "Zurich",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 100"
+    }
+  },
+  {
+    "file": "0010_7.jpg",
+    "meta": {
+      "path": "static/images/0010_7.jpg",
+      "birthtime": "2025-08-25T13:12:16.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1756128827/0010_7.jpg"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Night treats",
+      "altText": "A night shot looking across the road at a bar and ice cream palor with people walking past patron who are sitting outside.",
+      "story": "Evening outdoor dining is one of the best parts of Summertime in Europe.",
+      "year": "2025",
+      "month": 6,
+      "collection": "Switzerland",
+      "location": "Zurich",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 100"
+    }
+  },
+  {
+    "file": "0017_14.jpg",
+    "meta": {
+      "path": "static/images/0017_14.jpg",
+      "birthtime": "2025-08-25T13:12:16.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1756128943/0017_14.jpg"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Lucerne and mountains",
+      "altText": "Looking down a fast flowing river towards the old town of Lucerne. Mountains rise above the city in the background.",
+      "story": "Looking back at Lucerne old town. It was around this time that I decided I wanted to try and get to the mountains outside the city.",
+      "year": "2025",
+      "month": 6,
+      "collection": "Switzerland",
+      "location": "Lucerne",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 100"
+    }
+  },
+  {
+    "file": "0021_18.jpg",
+    "meta": {
+      "path": "static/images/0021_18.jpg",
+      "birthtime": "2025-08-25T13:12:16.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1756129015/0021_18.jpg"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Old town by the lake",
+      "altText": "Roofs of the old town of Lucerne, next to a lake. Mountains are in the background.",
+      "story": "An unplanned day trip to Lucerne turned out to be a highlight of my time in Switzerland.",
+      "year": "2025",
+      "month": 6,
+      "collection": "Switzerland",
+      "location": "Lucerne",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 100"
+    }
+  },
+  {
+    "file": "0022_19.jpg",
+    "meta": {
+      "path": "static/images/0022_19.jpg",
+      "birthtime": "2025-08-25T13:12:16.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1756129141/0022_19.jpg"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Watching over",
+      "altText": "A crow sits on a stone wall looking into the distance. A walkway on the wall leads off into the distance.",
+      "story": "Caught this fella looking out over Lucerne in the late morning.",
+      "year": "2025",
+      "month": 6,
+      "collection": "Switzerland",
+      "location": "Lucerne",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 100"
+    }
+  },
+  {
+    "file": "0027_24.jpg",
+    "meta": {
+      "path": "static/images/0027_24.jpg",
+      "birthtime": "2025-08-25T13:12:16.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1756129213/0027_24.jpg"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Peaks and peaks",
+      "altText": "Snow capped mountains line the background of the shot, under a blue sky. In the foreground, a lower rocky peak is present.",
+      "story": "High mountain life in Switzerland.",
+      "year": "2025",
+      "month": 6,
+      "collection": "Switzerland",
+      "location": "Lucerne",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 100"
+    }
+  },
+  {
+    "file": "0029_26.jpg",
+    "meta": {
+      "path": "static/images/0029_26.jpg",
+      "birthtime": "2025-08-25T13:12:16.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1756129382/0029_26.jpg"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Cogwheel railway and zig zagged paths",
+      "altText": "A red train goes down a mountain slope, with zig zagged walking trails running alongside it.",
+      "story": "Getting up to the top of Mount Pilatus was a journey that included trains, boats, and a cogwheel railway.",
+      "year": "2025",
+      "month": 6,
+      "collection": "Switzerland",
+      "location": "Lucerne",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 100"
+    }
+  },
+  {
+    "file": "0030_27.jpg",
+    "meta": {
+      "path": "static/images/0030_27.jpg",
+      "birthtime": "2025-08-25T13:12:16.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1756129441/0030_27.jpg"
+    },
+    "metadata": {
+      "portrait": true,
+      "title": "Church on the edge",
+      "altText": "A white church sits on the ridge of a grassy incline.",
+      "story": "",
+      "year": "2025",
+      "month": 6,
+      "collection": "Switzerland",
+      "location": "Lucerne",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 100"
+    }
+  },
+  {
+    "file": "0037_34.jpg",
+    "meta": {
+      "path": "static/images/0037_34.jpg",
+      "birthtime": "2025-08-25T13:12:16.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1756129551/0037_34.jpg"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "Hikes along the edge",
+      "altText": "A hiking trail cuts through the rock on the side of a mountain. Two hikers are in the far distance.",
+      "story": "Hiking the different trails at the top of Mount Pilatus kept me up there for waaaaay longer than I ever anticipated.",
+      "year": "2025",
+      "month": 6,
+      "collection": "Switzerland",
+      "location": "Lucerne",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 100"
+    }
   }
 ]
