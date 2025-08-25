@@ -123,8 +123,9 @@
     max-inline-size: var(--size-header-1);
 }
 :where(h2) {
-    font-size: var(--font-size-6);
-    max-inline-size: var(--size-header-2);
+    font-size: var(--font-size-fluid-2);
+    max-inline-size: 100%;
+    overflow-wrap: anywhere;
 }
 :where(h3) {
     font-size: var(--font-size-5);
@@ -1188,7 +1189,7 @@ footer p {
 
 #gallery-holder {
     display: grid;
-    grid-template-columns: 1fr 10ch;
+    grid-template-columns: 1fr 11ch;
 }
 
 #gallery-holder nav {
@@ -1286,6 +1287,11 @@ a[data-new="new"]:before {
     display: grid;
     place-content: center;
     box-shadow: var(--sand-10) -2px 2px 1px;
+    transition: all 0.2s ease-out;
+}
+
+a[data-new="new"]:hover:before {
+    opacity: 0;
 }
 
 li:has([data-has-new="true"]) {
