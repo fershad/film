@@ -25,8 +25,8 @@ eleventyComputed:
 {% elsif image.metadata.collection AND hasLocation == 0 %}
   <div class="location"><small><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-stack"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6l-8 4l8 4l8 -4l-8 -4" /><path d="M4 14l8 4l8 -4" /></svg> <span>{{ image.metadata.collection }}</span></small></div>
 {% endif %}
-<h1>{{ image.metadata.title }}</h1>
-<aside>
+<h1 id="image-title">{{ image.metadata.title }}</h1>
+<aside id="image-details">
   {% if image.metadata.year AND image.metadata.month %}
     {% capture datestamp %}
       {{ image.metadata.year }}-{{ image.metadata.month }}
@@ -65,3 +65,33 @@ eleventyComputed:
     </ol>
   </nav>
 </div>
+
+
+<script>
+if (
+  HTMLScriptElement.supports &&
+  HTMLScriptElement.supports("speculationrules")
+) {
+  console.log("Speculation rules supported");
+  const specScript = document.createElement("script");
+  specScript.type = "speculationrules";
+  const specRules = {
+    prefetch: [
+      {
+        source: "list",
+        urls: ["{{ pagination.href.next }}", "{{ pagination.href.previous }}"],
+      },
+    ],
+  };
+  specScript.textContent = JSON.stringify(specRules);
+  document.body.append(specScript);
+} else {
+  const linkElemNext = document.createElement("link");
+  const linkElemPrev = document.createElement("link");
+  linkElemNext.rel = "prefetch";
+  linkElemPrev.rel = "prefetch";
+  linkElemNext.href = "{{pagination.href.next}}";
+  linkElemPrev.href = "{{pagination.href.previous}}";
+  document.head.append(linkElem);
+}
+</script>
