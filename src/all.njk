@@ -18,7 +18,9 @@
       "description": "{{ image.data.description }}",
       "collection": "{{ image.data.collection }}",
       "shortDate": "{{ image.data.shortDate }}",
-      "portrait": "{{ image.data.portrait }}"
+      "portrait": "{{ image.data.portrait }}",
+      "film": "{{ image.data.data.film }}",
+      "camera": "{{ image.data.data.camera }}",
     }{%- if not loop.last -%},{%- endif -%}
     {%- endfor -%}
   ]
