@@ -18,6 +18,8 @@ eleventyComputed:
   groupingName: "{{image.metadata.collection}}"
   shortDate: "{{image.metadata.year}}-{{image.metadata.month}}"
   portrait: "{{image.metadata.portrait}}"
+  film: "{{image.metadata.film}}"
+  camera: "{{image.metadata.camera}}"
 ---
 {% assign hasLocation = image.metadata.location | size %}
 {% if image.metadata.collection and hasLocation > 0 %}
