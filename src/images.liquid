@@ -58,7 +58,7 @@ eleventyComputed:
         {% assign galleryImages = images | where: "metadata.collection", image.metadata.collection %}
         {% for img in galleryImages %}
         <li {% if img.file == image.file %}class="highlight"{% endif %}>{% unless img.file == image.file %}<a href="/image/{{ img.file | slugify }}">{% endunless %}
-          <img loading="lazy" decoding="async" src="{{ img.meta.url | cloudinarySource }}" alt="{{ img.metadata.altText }}" height="160px" width="160px" srcset="{{ img.meta.url | cloudinarySrcset }}" sizes="10vw">
+          <img loading="lazy" decoding="async" src="{{ img.meta.url | cloudinarySource }}" alt="{{ img.metadata.altText }}" height="160px" width="160px" srcset="{{ img.meta.url | cloudinarySmallImages }}" sizes="10vw">
         {% unless img.file == image.file %}</a>{% endunless %}</li>
         {% endfor %}
     </ol>

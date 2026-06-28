@@ -117,8 +117,8 @@
     text-wrap: balance;
     /*font-weight: var(--font-weight-9);*/
     line-height: var(--font-lineheight-1);
-    font-variation-settings: "wght" 200;
-    font-weight: 200;
+    font-variation-settings: "wght" 400;
+    font-weight: 400;
 }
 :where(h1) {
     font-size: var(--font-size-8);
@@ -973,12 +973,11 @@
 }
 
 @font-face {
-    font-family: "Cormorant Garamond", var(--font-serif);
+    font-family: "Bitter";
     font-optical-sizing: auto;
-    font-variation-settings: "wght" 200;
+    font-variation-settings: "wght" 400;
     font-style: normal;
-    src: url("/static/fonts/CormorantGaramond-VariableFont_wght.woff2")
-        format("woff2");
+    src: url("/static/fonts/Bitter.woff2") format("woff2");
 }
 
 /* NOTE: General stuff */
@@ -1004,16 +1003,17 @@
 
 html {
     font-size: var(--font-size-fluid-1);
-    font-family: "Cormorant Garamond";
-    font-variation-settings: "wght" 200;
-    font-weight: 200;
+    font-family: "Bitter", var(--font-serif);
+    font-variation-settings: "wght" 400;
+    font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--sand-0);
     color: var(--stone-10);
-    font-variation-settings: "wght" 200;
-    font-weight: 200;
+    font-variation-settings: "wght" 400;
+    font-weight: 400;
 }
 
 main,
@@ -1079,18 +1079,19 @@ header h1 {
 
 header {
     display: grid;
-    grid-template-rows: 1fr 10vh;
+    grid-template-rows: 1fr auto;
     gap: 0;
     align-items: flex-start;
     /*justify-content: space-between;*/
     padding-block: var(--size-3);
     padding-inline: var(--size-3);
     flex-wrap: wrap;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header.image {
-    height: auto;
+    min-height: auto;
+    grid-template-rows: auto;
     gap: var(--size-3);
 }
 
@@ -1102,6 +1103,10 @@ nav ol {
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+}
+
+footer nav ul {
+    justify-content: center;
 }
 
 nav.image-nav ol {
@@ -1196,13 +1201,16 @@ aside {
 }
 
 footer {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     margin-block-start: var(--size-5);
     max-width: var(--size-xl);
     padding: var(--size-3);
     padding-block-end: var(--size-5);
     text-align: center;
+    gap: var(--size-3);
 }
 
 footer a {

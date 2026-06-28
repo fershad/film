@@ -63,6 +63,24 @@ export default async function (eleventyConfig) {
     return srcset;
   });
 
+  eleventyConfig.addFilter("cloudinarySmallImages", (url) => {
+    const w400 = url.replace("upload/", "upload/f_auto/q_auto/c_scale,w_80/");
+    const w800 = url.replace("upload/", "upload/f_auto/q_auto/c_scale,w_160/");
+    const w1600 = url.replace("upload/", "upload/f_auto/q_auto/c_scale,w_240/");
+    const w2075 = url.replace("upload/", "upload/f_auto/q_auto/c_scale,w_320/");
+
+    const srcset = `${w400} 80w, ${w800} 160w, ${w1600} 240w, ${w2075} 360w`;
+    return srcset;
+  });
+
+  eleventyConfig.addFilter("heroImageURL", (value = "") => {
+    return value.replace("upload/", "upload/f_auto/q_auto/");
+  });
+
+  eleventyConfig.addFilter("heroLowQual", (value = "") => {
+    return value.replace("upload/", "upload/f_auto/q_5/e_blur:400/");
+  });
+
   eleventyConfig.addFilter("prettyJson", (value = "") => {
     // Remove the altText from the JSON
     delete value.altText;
@@ -85,7 +103,10 @@ export default async function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("getHeroImage", (images) => {
-    const heroImages = images.filter((image) => !image.metadata.portrait);
+    const heroImages = images.filter(
+      (image) =>
+        !image.metadata.portrait && image.metadata.camera === "Canon AV-1",
+    );
     // Return a random image from the filtered list
     //
     // console.log(heroImages);

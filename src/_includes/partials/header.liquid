@@ -1,7 +1,7 @@
 <header {% unless pageType == 'gallery' %} class="image" {% endunless %}>
     {% if pageType == 'gallery' %}
     <span class="hero">
-        <img src="{{ heroImage }}" alt="Hero image" />
+        <img src="{{ heroImage | heroImageURL }}" alt="Hero image" style="background-color: var(--sand-2)" />
         <span>
             <h1>Film</h1>
             <small>{{ tagline | default: site.tagline }}</small>

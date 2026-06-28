@@ -23,7 +23,7 @@ eleventyComputed:
             {% for image in groupedImages %}
                 <a href="/image/{{ image.file | slugify }}">
                     <img loading="lazy" decoding="async" src="{{  image.meta.url | cloudinarySource }}" alt="{{ image.metadata.altText }}" height="40" width="40"
-                        srcset="{{ image.meta.url | cloudinarySrcset }}" sizes="40px">
+                        srcset="{{ image.meta.url | cloudinarySmallImages }}" sizes="40px">
                 </a>
             {% endfor %}
             </div>
