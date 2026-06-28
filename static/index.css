@@ -1079,11 +1079,12 @@ header h1 {
 header {
     display: flex;
     gap: var(--size-3);
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    /*justify-content: space-between;*/
     padding-block: var(--size-3);
     padding-inline: var(--size-3);
     flex-wrap: wrap;
+    height: 100vh;
 }
 
 nav ul,
@@ -1359,6 +1360,20 @@ li:has([data-has-new="true"])::before {
 
 li:has([data-has-new="true"]):hover:before {
     box-shadow: none;
+}
+
+.hero {
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-inline: calc(var(--size-3) * -1);
+    margin-block-start: calc(var(--size-3) * -1);
+}
+
+.hero > span {
+    position: absolute;
+    bottom: 0;
+    margin-inline-start: var(--size-3);
 }
 
 @media (max-width: 1379px) {

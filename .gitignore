@@ -1,6 +1,8 @@
 # Node modules
 node_modules/
 
+src-backup
+
 # Logs
 logs/
 *.log

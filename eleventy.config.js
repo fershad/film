@@ -84,6 +84,17 @@ export default async function (eleventyConfig) {
     return images;
   });
 
+  eleventyConfig.addFilter("getHeroImage", (images) => {
+    const heroImages = images.filter((image) => !image.metadata.portrait);
+    // Return a random image from the filtered list
+    //
+    // console.log(heroImages);
+    const randomIndex = Math.floor(Math.random() * heroImages.length);
+    const randomImage = heroImages[randomIndex];
+
+    return randomImage ? randomImage.meta.url : null;
+  });
+
   eleventyConfig.addFilter("isNew", (birthtime) => {
     // Parse the date string
     const date = new Date(birthtime);

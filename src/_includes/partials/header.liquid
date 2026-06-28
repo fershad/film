@@ -1,8 +1,11 @@
 <header>
+    <span class="hero">
+        <img src="{{ heroImage }}" alt="Hero image" />
         <span>
             <h1>Film</h1>
             <small>{{ tagline | default: site.tagline }}</small>
         </span>
+    </span>
         {% unless pageType == 'gallery' %}
             <nav>
                 <ul>

@@ -1,6 +1,8 @@
 ---
 layout: base.liquid
 pageType: gallery
+eleventyComputed:
+  heroImage: "{{ images | getHeroImage }}"
 ---
 {% assign group = site.gallery.group %}
 {% assign groupByField = site.gallery.groupBy %}
