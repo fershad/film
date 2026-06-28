@@ -31,23 +31,4 @@ eleventyComputed:
         {% endfor %}
     {% endif %}
     </section>
-    <!--<nav>
-        <ul>
-            {% for grouping in galleryImages %}
-                <li>
-                        <a
-                            href="#{{ groupByField}}-{{ grouping.name | downcase }}"
-                            data-has-new={{ grouping.name | downcase | groupingHasNew: grouping.items }}
-                        >
-                        {{ grouping.name }}
-                        </a>
-                        </li>
-            {% endfor %}
-        </ul>
-        <ul class="border-top">
-            <li><a href="/random">Random</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/feed.xml">RSS</a></li>
-        </ul>
-    </nav>-->
 </div>

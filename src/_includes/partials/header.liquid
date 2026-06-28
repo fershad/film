@@ -1,4 +1,5 @@
-<header>
+<header {% unless pageType == 'gallery' %} class="image" {% endunless %}>
+    {% if pageType == 'gallery' %}
     <span class="hero">
         <img src="{{ heroImage }}" alt="Hero image" />
         <span>
@@ -6,6 +7,13 @@
             <small>{{ tagline | default: site.tagline }}</small>
         </span>
     </span>
+    {% else %}
+    <span>
+        <h1>Film</h1>
+        <small>{{ tagline | default: site.tagline }}</small>
+    </span>
+    {% endif %}
+
         {% unless pageType == 'gallery' %}
             <nav>
                 <ul>
@@ -20,5 +28,27 @@
                     </li>
                 </ul>
             </nav>
+        {% else %}
+
+        {% assign group = site.gallery.group %}
+        {% assign groupByField = site.gallery.groupBy %}
+        {% assign groupBy = "metadata." |  concat: groupByField %}
+
+        {% assign galleryImages = images | group_by: groupBy %}
+
+        <nav>
+            <ul>
+                {% for grouping in galleryImages %}
+                    <li>
+                            <a
+                                href="#{{ groupByField}}-{{ grouping.name | downcase }}"
+                                data-has-new={{ grouping.name | downcase | groupingHasNew: grouping.items }}
+                            >
+                            {{ grouping.name }}
+                            </a>
+                            </li>
+                {% endfor %}
+            </ul>
+        </nav>
         {% endunless %}
     </header>

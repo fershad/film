@@ -27,7 +27,6 @@ eleventyComputed:
 {% elsif image.metadata.collection AND hasLocation == 0 %}
   <div class="location"><small><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-stack"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6l-8 4l8 4l8 -4l-8 -4" /><path d="M4 14l8 4l8 -4" /></svg> <span>{{ image.metadata.collection }}</span></small></div>
 {% endif %}
-<h1 id="image-title">{{ image.metadata.title }}</h1>
 <aside id="image-details">
   {% if image.metadata.year AND image.metadata.month %}
     {% capture datestamp %}
@@ -51,19 +50,17 @@ eleventyComputed:
 {% endif %}
 <div class="image-holder" data-orientation="{{ orientation }}">
   <section id="main-image">
-    <p>{{ image.metadata.story }}</p>
+    <!--<p>{{ image.metadata.story }}</p>-->
     <img loading="eager" decoding="async" src="{{ image.meta.url | cloudinarySource }}" alt="{{ image.metadata.altText }}" width="2075" height="1463" sizes="100vw">
   </section>
   <nav role="image-navigation" class="image-nav">
     <ol>
-      <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><span>
-        <img loading="lazy" decoding="async" src="{{ pagination.page.previous.meta.url | cloudinarySource }}" alt="Previous image" height="130" width="230" srcset="{{ pagination.page.previous.meta.url | cloudinarySrcset }}" sizes="30vw">
-        <p>Previous</p>
-      </span></a>{% endif %}</li>
-      <li><span>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">
-        <img loading="lazy" decoding="async" src="{{ pagination.page.next.meta.url | cloudinarySource }}" alt="Next image" height="130" width="230" srcset="{{ pagination.page.next.meta.url | cloudinarySrcset }}" sizes="30vw">
-        <p>Next</p>
-      </a></span>{% endif %}</li>
+        {% assign galleryImages = images | where: "metadata.collection", image.metadata.collection %}
+        {% for img in galleryImages %}
+        <li {% if img.file == image.file %}class="highlight"{% endif %}>{% unless img.file == image.file %}<a href="/image/{{ img.file | slugify }}">{% endunless %}
+          <img loading="lazy" decoding="async" src="{{ img.meta.url | cloudinarySource }}" alt="{{ img.metadata.altText }}" height="160px" width="160px" srcset="{{ img.meta.url | cloudinarySrcset }}" sizes="10vw">
+        {% unless img.file == image.file %}</a>{% endunless %}</li>
+        {% endfor %}
     </ol>
   </nav>
 </div>
