@@ -4918,5 +4918,45 @@
       "camera": "Canon AV-1",
       "film": "Fujifilm Fujicolor 200"
     }
+  },
+  {
+    "file": "0026_12-EDIT 2.jpg",
+    "meta": {
+      "path": "static/images/0026_12-EDIT 2.jpg",
+      "birthtime": "2026-06-29T22:42:46.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1783174282/0026_12-EDIT_2.jpg"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "",
+      "altText": "A morning scene looking out at mist covered mountains. Rice terraces are in the foreground of the shot, reflecting the early morning sun.",
+      "story": "",
+      "year": "2026",
+      "month": 6,
+      "collection": "Japan",
+      "location": "Wakayama",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 200"
+    }
+  },
+  {
+    "file": "0030_8-EDIT.jpg",
+    "meta": {
+      "path": "static/images/0030_8-EDIT.jpg",
+      "birthtime": "2026-06-29T22:42:46.000Z",
+      "url": "https://res.cloudinary.com/itsfish/image/upload/v1783174326/0030_8-EDIT.jpg"
+    },
+    "metadata": {
+      "portrait": false,
+      "title": "",
+      "altText": "A first person view looking at a Japanese graveyard.",
+      "story": "",
+      "year": "2026",
+      "month": 6,
+      "collection": "Japan",
+      "location": "Wakayama",
+      "camera": "Canon AV-1",
+      "film": "Fujifilm Fujicolor 200"
+    }
   }
 ]
