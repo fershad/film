@@ -58,11 +58,11 @@ export const config = {
       type: "list",
       message: "Enter the camera used:",
       choices: [
-        "Olympus Pen EE-3",
         "Canon AV-1",
-        "Konica C35",
-        "Minolta Zoom 70",
         "Minolta Hi-matic E",
+        "Konica C35",
+        "Olympus Pen EE-3",
+        "Minolta Zoom 70",
       ],
     },
     film: {
@@ -70,11 +70,11 @@ export const config = {
       type: "list",
       message: "Enter the film used:",
       choices: [
-        "Kodak Portra 400",
         "Fujifilm Fujicolor 200",
+        "Kodak Ultramax 400",
+        "Kodak Portra 400",
         "Fujifilm Fujicolor 100",
         "Kodak Color 200",
-        "Kodak Ultramax 400",
         "Ilford XP2 400",
         "Ilford HP5 Plus 400",
         "Ilford FP4 Plus 125",
