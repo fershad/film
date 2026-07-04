@@ -1241,9 +1241,10 @@ footer p {
 
 .group {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
     gap: var(--size-1);
-    height: 40vh;
+    margin-block-end: var(--size-3);
+    /*min-height: 40vh;*/
 }
 
 .group-name {
@@ -1462,6 +1463,11 @@ li:has([data-has-new="true"]):hover:before {
 
 /* Set for screen sizes > 768px */
 @media screen and (min-width: 767px) {
+    .group {
+        grid-template-columns: 0.5fr 1fr;
+        min-height: 40vh;
+        grid-template-rows: initial;
+    }
     /*.image-holder[data-orientation="portrait"]:not(nav.image-nav ol li img) {
         display: grid;
         gap: var(--size-3);
