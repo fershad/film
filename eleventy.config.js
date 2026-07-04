@@ -231,7 +231,7 @@ export default async function (eleventyConfig) {
     }
 
     const metadata = await Image(input, {
-      // widths: [2075], // tiny placeholder width
+      widths: [1400], // tiny placeholder width
       formats: ["jpeg"],
       outputDir: path.resolve(__dirname, "_site/img/lowqual/"),
       urlPath: "/img/lowqual/",
