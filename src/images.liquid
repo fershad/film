@@ -51,7 +51,7 @@ eleventyComputed:
 <div class="image-holder" data-orientation="{{ orientation }}">
   <section id="main-image">
     <!--<p>{{ image.metadata.story }}</p>-->
-    <img loading="eager" decoding="async" src="{{ image.meta.url | cloudinarySource }}" alt="{{ image.metadata.altText }}" width="2075" height="1463" sizes="100vw">
+    <img loading="eager" decoding="async" src="{{ image.meta.url | cloudinarySource }}" alt="{{ image.metadata.altText }}" style="background-image: url({% lowQImg image.meta.url %}); background-size: cover; background-position: center;" width="2075" height="1463" sizes="100vw">
   </section>
   <nav role="image-navigation" class="image-nav">
     <ol>

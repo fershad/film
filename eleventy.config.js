@@ -205,5 +205,47 @@ export default async function (eleventyConfig) {
     },
   );
 
+  eleventyConfig.addAsyncShortcode("lowQImg", async function (src) {
+    if (!src) return "";
+
+    const isRemote = /^https?:\/\//i.test(src);
+    const cleanedSrc = src.replace(/^\//, "");
+
+    // Support both root-level paths like /static/... and src/... paths.
+    let input = src;
+    if (!isRemote) {
+      const candidates = [
+        path.resolve(__dirname, cleanedSrc),
+        path.resolve(__dirname, "src", cleanedSrc),
+      ];
+
+      for (const candidate of candidates) {
+        try {
+          await fs.access(candidate);
+          input = candidate;
+          break;
+        } catch {
+          // try next candidate
+        }
+      }
+    }
+
+    const metadata = await Image(input, {
+      // widths: [2075], // tiny placeholder width
+      formats: ["jpeg"],
+      outputDir: path.resolve(__dirname, "_site/img/lowqual/"),
+      urlPath: "/img/lowqual/",
+      sharpJpegOptions: {
+        quality: 12, // low quality
+        progressive: true,
+        mozjpeg: true,
+      },
+    });
+
+    const low = metadata.jpeg[0];
+
+    return low.url;
+  });
+
   eleventyConfig.addPlugin(pluginRss);
 }
