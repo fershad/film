@@ -62,6 +62,7 @@ export const config = {
         "Canon AV-1",
         "Konica C35",
         "Minolta Zoom 70",
+        "Minolta Hi-matic E",
       ],
     },
     film: {
@@ -76,6 +77,7 @@ export const config = {
         "Kodak Ultramax 400",
         "Ilford XP2 400",
         "Ilford HP5 Plus 400",
+        "Ilford FP4 Plus 125",
         "Kentmere Pan 400",
       ],
     },

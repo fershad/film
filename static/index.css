@@ -989,6 +989,20 @@
     view-transition-name: holder;
 }
 
+[data-orientation="portrait"] img {
+    aspect-ratio: 672/953;
+    max-height: 50rem;
+    height: 100%;
+    width: auto;
+}
+
+[data-orientation="landscape"] img {
+    aspect-ratio: 953/672;
+    max-height: 50rem;
+    width: 100%;
+    height: auto;
+}
+
 #image-title {
     view-transition-name: image-title;
 }
@@ -1170,10 +1184,12 @@ div > time {
 
 aside {
     text-align: left;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10ch, 15ch));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
     gap: var(--size-3);
-    margin-block-end: var(--size-4);
+    margin-block: var(--size-4);
 }
 
 .location {
@@ -1276,6 +1292,10 @@ nav.image-nav ol {
     gap: var(--size-1);
     justify-content: flex-start;
     align-content: center;
+}
+
+nav.image-nav ol {
+    justify-content: center;
 }
 
 nav.image-nav ol {
@@ -1442,20 +1462,21 @@ li:has([data-has-new="true"]):hover:before {
 
 /* Set for screen sizes > 768px */
 @media screen and (min-width: 767px) {
-    .image-holder[data-orientation="portrait"]:not(nav.image-nav ol li img) {
+    /*.image-holder[data-orientation="portrait"]:not(nav.image-nav ol li img) {
         display: grid;
         gap: var(--size-3);
         grid-template-areas: "image nav";
         grid-template-columns: 1fr 20vw;
-    }
+    }*/
 
     .image-holder #main-image {
-        grid-area: image;
+        /*grid-area: image;*/
         /* max-height: 100vh; */
     }
 
     .image-holder nav {
-        grid-area: nav;
+        /*grid-area: nav;*/
+        display: block;
     }
 
     /*.image-holder[data-orientation="portrait"] nav ol {
