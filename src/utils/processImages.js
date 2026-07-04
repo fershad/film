@@ -49,6 +49,7 @@ export const readFiles = async () => {
     const files = await fs.readdir(directory);
     for (let i = 0; i < files.length; i++) {
       const file = files[i];
+      if (file.startsWith(".")) continue;
       try {
         const stats = await fs.stat(`${directory}/${file}`);
         if (stats.isFile()) {
@@ -150,6 +151,9 @@ export const getImages = async () => {
   return images;
 };
 
-getImages();
+getImages().catch((error) => {
+  console.error("Failed to process images at top level.", error);
+  process.exitCode = 1;
+});
 
 export default getImages;
