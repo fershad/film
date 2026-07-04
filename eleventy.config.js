@@ -113,7 +113,7 @@ export default async function (eleventyConfig) {
     const randomIndex = Math.floor(Math.random() * heroImages.length);
     const randomImage = heroImages[randomIndex];
 
-    return randomImage ? randomImage.meta.path : null;
+    return randomImage ? randomImage.meta.url : null;
   });
 
   eleventyConfig.addFilter("getHeroImageUrl", (images, path) => {
@@ -161,13 +161,30 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addAsyncShortcode(
     "lowQualityImage",
-    async function (src, url, alt = "", className = "") {
+    async function (src, alt = "", className = "") {
       if (!src) return "";
 
+      const isRemote = /^https?:\/\//i.test(src);
       const cleanedSrc = src.replace(/^\//, "");
 
       // Support both root-level paths like /static/... and src/... paths.
       let input = src;
+      if (!isRemote) {
+        const candidates = [
+          path.resolve(__dirname, cleanedSrc),
+          path.resolve(__dirname, "src", cleanedSrc),
+        ];
+
+        for (const candidate of candidates) {
+          try {
+            await fs.access(candidate);
+            input = candidate;
+            break;
+          } catch {
+            // try next candidate
+          }
+        }
+      }
 
       const metadata = await Image(input, {
         widths: [1400], // tiny placeholder width
@@ -184,7 +201,7 @@ export default async function (eleventyConfig) {
       const low = metadata.jpeg[0];
       const classAttr = className ? ` class="${className}"` : "";
 
-      return `<img src="${url}" width="1400" height="950" alt="${alt}" ${classAttr} style="background:url(${low.url});background-size: cover;background-position: center center;"  loading="eager" decoding="async">`;
+      return `<img src="${src}" width="1400" height="950" alt="${alt}" ${classAttr} style="background:url(${low.url});background-size: cover;background-position: center center;"  loading="eager" decoding="async">`;
     },
   );
 
