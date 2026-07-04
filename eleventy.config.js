@@ -1,8 +1,8 @@
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import fs from "node:fs/promises";
 import path from "node:path";
 import CleanCSS from "clean-css";
 import pluginRss from "@11ty/eleventy-plugin-rss";
+import Image from "@11ty/eleventy-img";
 
 const __dirname = import.meta.dirname;
 
@@ -63,6 +63,24 @@ export default async function (eleventyConfig) {
     return srcset;
   });
 
+  eleventyConfig.addFilter("cloudinarySmallImages", (url) => {
+    const w400 = url.replace("upload/", "upload/f_auto/q_auto/c_scale,w_80/");
+    const w800 = url.replace("upload/", "upload/f_auto/q_auto/c_scale,w_160/");
+    const w1600 = url.replace("upload/", "upload/f_auto/q_auto/c_scale,w_240/");
+    const w2075 = url.replace("upload/", "upload/f_auto/q_auto/c_scale,w_320/");
+
+    const srcset = `${w400} 80w, ${w800} 160w, ${w1600} 240w, ${w2075} 360w`;
+    return srcset;
+  });
+
+  eleventyConfig.addFilter("heroImageURL", (value = "") => {
+    return value.replace("upload/", "upload/f_auto/q_auto/");
+  });
+
+  eleventyConfig.addFilter("heroLowQual", (value = "") => {
+    return value.replace("upload/", "upload/f_auto/q_5/e_blur:400/");
+  });
+
   eleventyConfig.addFilter("prettyJson", (value = "") => {
     // Remove the altText from the JSON
     delete value.altText;
@@ -82,6 +100,25 @@ export default async function (eleventyConfig) {
     }
 
     return images;
+  });
+
+  eleventyConfig.addFilter("getHeroImage", (images) => {
+    const heroImages = images.filter(
+      (image) =>
+        !image.metadata.portrait && image.metadata.camera === "Canon AV-1",
+    );
+    // Return a random image from the filtered list
+    //
+    // console.log(heroImages);
+    const randomIndex = Math.floor(Math.random() * heroImages.length);
+    const randomImage = heroImages[randomIndex];
+
+    return randomImage ? randomImage.meta.url : null;
+  });
+
+  eleventyConfig.addFilter("getHeroImageUrl", (images, path) => {
+    const image = images.find((image) => image.meta.path === path);
+    return image ? image.meta.url : null;
   });
 
   eleventyConfig.addFilter("isNew", (birthtime) => {
@@ -121,6 +158,52 @@ export default async function (eleventyConfig) {
 
     return newImages.length > 0;
   });
+
+  eleventyConfig.addAsyncShortcode(
+    "lowQualityImage",
+    async function (src, alt = "", className = "") {
+      if (!src) return "";
+
+      const isRemote = /^https?:\/\//i.test(src);
+      const cleanedSrc = src.replace(/^\//, "");
+
+      // Support both root-level paths like /static/... and src/... paths.
+      let input = src;
+      if (!isRemote) {
+        const candidates = [
+          path.resolve(__dirname, cleanedSrc),
+          path.resolve(__dirname, "src", cleanedSrc),
+        ];
+
+        for (const candidate of candidates) {
+          try {
+            await fs.access(candidate);
+            input = candidate;
+            break;
+          } catch {
+            // try next candidate
+          }
+        }
+      }
+
+      const metadata = await Image(input, {
+        widths: [1400], // tiny placeholder width
+        formats: ["jpeg"],
+        outputDir: path.resolve(__dirname, "_site/img/lowqual/"),
+        urlPath: "/img/lowqual/",
+        sharpJpegOptions: {
+          quality: 12, // low quality
+          progressive: true,
+          mozjpeg: true,
+        },
+      });
+
+      const low = metadata.jpeg[0];
+      const classAttr = className ? ` class="${className}"` : "";
+
+      return `<img src="${src}" width="1400" height="950" alt="${alt}" ${classAttr} style="background:url(${low.url});background-size: cover;background-position: center center;"  loading="eager" decoding="async">`;
+    },
+  );
 
   eleventyConfig.addPlugin(pluginRss);
 }

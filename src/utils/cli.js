@@ -14,10 +14,14 @@ const questions = [
 
 // Main function to run the CLI
 const runCLI = async (imagePath) => {
-  console.log(await terminalImage.file(imagePath, { width: "60%" }));
-  const answers = await inquirer.prompt(questions);
-  console.log({ answers });
-  return answers;
+  try {
+    console.log(await terminalImage.file(imagePath, { width: "60%" }));
+    const answers = await inquirer.prompt(questions);
+    console.log({ answers });
+    return answers;
+  } catch (error) {
+    console.error("Couldn't generate image.", imagePath);
+  }
 };
 
 export default runCLI;

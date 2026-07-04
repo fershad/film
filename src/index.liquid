@@ -1,6 +1,8 @@
 ---
 layout: base.liquid
 pageType: gallery
+eleventyComputed:
+  heroImage: "{{ images | getHeroImage }}"
 ---
 {% assign group = site.gallery.group %}
 {% assign groupByField = site.gallery.groupBy %}
@@ -12,62 +14,21 @@ pageType: gallery
     {% if group %}
       {% assign galleryImages = images | group_by: groupBy %}
         {% for grouping in galleryImages %}
+      <div class="group">
             <div id="{{ groupByField }}-{{ grouping.name | downcase }}" class="group-name">
                 <h2>{{ grouping.name }}</h2>
             </div>
-            {% assign groupedImages = grouping.items | set_featured %}
+            {% assign groupedImages = grouping.items %}
+            <div class="group-images">
             {% for image in groupedImages %}
-                <a href="/image/{{ image.file | slugify }}"
-                {% if image.featured %}
-                    class="featured"
-                {% endif %}
-
-                data-new={{  image.meta.birthtime | isNew }}
-                >
-                    <img loading="lazy" decoding="async" src="{{  image.meta.url | cloudinarySource }}" alt="{{ image.metadata.altText }}" height="400" width="400"
-                        srcset="{{ image.meta.url | cloudinarySrcset }}" sizes="40vw">
-                    {% if image.featured %}
-                    <span>{% if image.metadata.location.size > 0 %}{{ image.metadata.location }} | {%endif %}{{ image.metadata.camera }} | {{ image.metadata.film }}</span>
-                    {% endif %}
+                <a href="/image/{{ image.file | slugify }}">
+                    <img loading="lazy" decoding="async" src="{{  image.meta.url | cloudinarySource }}" alt="{{ image.metadata.altText }}" height="40" width="40"
+                        srcset="{{ image.meta.url | cloudinarySmallImages }}" sizes="40px">
                 </a>
             {% endfor %}
-        {% endfor %}
-        {% else %}
-        {% assign groupedImages = galleryImages %}
-        {% for image in galleryImages %}
-            <a href="/image/{{ image.file | slugify }}"
-                {% if image.featured %}
-                    class="featured"
-                {% endif %}
-
-                data-new={{  image.meta.birthtime | isNew }}
-            >
-                <img loading="lazy" decoding="async" src="{{  image.meta.url | cloudinarySource }}" alt="{{ image.metadata.altText }}" height="400" width="400"
-                    srcset="{{ image.meta.url | cloudinarySrcset }}" sizes="40vw">
-                {% if image.featured %}
-                <span>{% if image.metadata.location.size > 0 %}{{ image.metadata.location }} | {%endif %}{{ image.metadata.camera }} | {{ image.metadata.film }}</span>
-                {% endif %}
-            </a>
+            </div>
+        </div>
         {% endfor %}
     {% endif %}
     </section>
-    <nav>
-        <ul>
-            {% for grouping in galleryImages %}
-                <li>
-                        <a
-                            href="#{{ groupByField}}-{{ grouping.name | downcase }}"
-                            data-has-new={{ grouping.name | downcase | groupingHasNew: grouping.items }}
-                        >
-                        {{ grouping.name }}
-                        </a>
-                        </li>
-            {% endfor %}
-        </ul>
-        <ul class="border-top">
-            <li><a href="/random">Random</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/feed.xml">RSS</a></li>
-        </ul>
-    </nav>
 </div>
