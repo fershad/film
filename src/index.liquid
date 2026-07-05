@@ -18,7 +18,7 @@ eleventyComputed:
             <div id="{{ groupByField }}-{{ grouping.items[0].metadata[groupByField] | downcase }}" class="group-name">
                 <h2>{{ grouping.items[0].metadata[groupByField] }}</h2>
             </div>
-            {%  assign subgroup = grouping.items | group_by: "metadata.month" %}
+            {%  assign subgroup = grouping.items | group_by: "metadata.month" | sort: "name" | reverse %}
             {% for sub in subgroup %}
       <div class="group">
             <div id="month-{{ sub.name }}-{{ grouping.items[0].metadata[groupByField] | downcase }}" class="group-name">
