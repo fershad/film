@@ -20,6 +20,7 @@ eleventyComputed:
   portrait: "{{image.metadata.portrait}}"
   film: "{{image.metadata.film}}"
   camera: "{{image.metadata.camera}}"
+  year: "{{image.metadata.year}}"
 ---
 
 <link rel=preload as=image href="{% lowQImg image.meta.url %}" fetchpriority=high>

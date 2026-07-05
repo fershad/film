@@ -22,7 +22,7 @@
                         {% assign group = site.gallery.group %}
                         {% if group and pageType == 'image' %}
                             {% assign groupByField = site.gallery.groupBy %}
-                            <a href="/#{{site.gallery.groupBy |  downcase }}-{{ groupingName |  downcase }}">&larr; {{ backLinkWording }}</a>
+                            <a href="/#{{site.gallery.groupBy |  downcase }}-{{ year |  downcase }}">&larr; Back to timeline</a>
                         {% else %}
                         <a href="/">&larr; Back to gallery</a>
                         {% endif %}
@@ -35,7 +35,7 @@
         {% assign groupByField = site.gallery.groupBy %}
         {% assign groupBy = "metadata." |  concat: groupByField %}
 
-        {% assign galleryImages = images | group_by: groupBy %}
+        {% assign galleryImages = images | group_by: groupBy | sort: "name" | reverse %}
 
         <nav>
             <ul>

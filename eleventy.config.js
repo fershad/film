@@ -247,5 +247,25 @@ export default async function (eleventyConfig) {
     return low.url;
   });
 
+  eleventyConfig.addFilter("toMonth", (string) => {
+    const number = parseInt(string);
+
+    const months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    return months[number - 1];
+  });
+
   eleventyConfig.addPlugin(pluginRss);
 }

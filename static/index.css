@@ -130,7 +130,7 @@
     overflow-wrap: anywhere;
 }
 :where(h3) {
-    font-size: var(--font-size-5);
+    font-size: var(--font-size-fluid-1);
 }
 :where(h4) {
     font-size: var(--font-size-4);
@@ -1247,6 +1247,15 @@ footer p {
     /*min-height: 40vh;*/
 }
 
+.year-group {
+    min-height: 40vh;
+    margin-block-end: var(--size-3);
+}
+
+.year-group h2:first-of-type {
+    margin-block-end: var(--size-3);
+}
+
 .group-name {
     /*color: var(--stone-10);
     background-color: var(--sand-2);*/
@@ -1254,6 +1263,7 @@ footer p {
     place-items: center;
     font-variation-settings: "wght" 200;
     font-weight: 200;
+    margin-block-end: var(--size-3);
 }
 
 #gallery-holder {
@@ -1465,9 +1475,14 @@ li:has([data-has-new="true"]):hover:before {
 @media screen and (min-width: 767px) {
     .group {
         grid-template-columns: 0.5fr 1fr;
-        min-height: 40vh;
+        /*min-height: 40vh;*/
         grid-template-rows: initial;
     }
+
+    .year-group h2:first-of-type {
+        margin-inline-end: auto;
+    }
+
     /*.image-holder[data-orientation="portrait"]:not(nav.image-nav ol li img) {
         display: grid;
         gap: var(--size-3);

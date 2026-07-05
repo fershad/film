@@ -6,27 +6,34 @@ eleventyComputed:
 ---
 {% assign group = site.gallery.group %}
 {% assign groupByField = site.gallery.groupBy %}
-{% assign groupBy = "metadata." |  concat: groupByField %}
+{% assign groupBy = "metadata." |  concat: groupByField  %}
 
 <div id="gallery-holder">
     {% assign galleryImages = images %}
     <section id="gallery">
     {% if group %}
-      {% assign galleryImages = images | group_by: groupBy %}
+      {% assign galleryImages = images | group_by: groupBy | sort: "name" | reverse %}
         {% for grouping in galleryImages %}
-      <div class="group">
-            <div id="{{ groupByField }}-{{ grouping.name | downcase }}" class="group-name">
-                <h2>{{ grouping.name }}</h2>
+        <div class="year-group">
+            <div id="{{ groupByField }}-{{ grouping.items[0].metadata[groupByField] | downcase }}" class="group-name">
+                <h2>{{ grouping.items[0].metadata[groupByField] }}</h2>
             </div>
-            {% assign groupedImages = grouping.items %}
+            {%  assign subgroup = grouping.items | group_by: "metadata.month" %}
+            {% for sub in subgroup %}
+      <div class="group">
+            <div id="month-{{ sub.name }}-{{ grouping.items[0].metadata[groupByField] | downcase }}" class="group-name">
+                <h3>{{ sub.name | toMonth }}</h3>
+            </div>
             <div class="group-images">
-            {% for image in groupedImages %}
+            {% for image in sub.items %}
                 <a href="/image/{{ image.file | slugify }}">
                     <img loading="lazy" decoding="async" src="{{  image.meta.url | cloudinarySource }}" alt="{{ image.metadata.altText }}" height="40" width="40"
                         srcset="{{ image.meta.url | cloudinarySmallImages }}" sizes="40px">
                 </a>
             {% endfor %}
             </div>
+        </div>
+            {% endfor %}
         </div>
         {% endfor %}
     {% endif %}
