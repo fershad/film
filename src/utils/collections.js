@@ -12,5 +12,6 @@ export const collections = [
   "Switzerland",
   "Hong Kong",
   "Touch",
+  "France",
   // "2024 Touch World Cup",
 ];
